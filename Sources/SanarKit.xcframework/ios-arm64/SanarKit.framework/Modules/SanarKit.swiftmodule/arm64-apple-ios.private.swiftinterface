@@ -86,7 +86,6 @@ public struct SanarConnect {
   public static func sanarConnect(cid: Swift.String, bundleId: Swift.String, requestBody: [Swift.String : Any]) async throws -> Swift.String
   #endif
   public static func sanarDisconnect()
-  public static func aboutSanar()
 }
 public struct BookingListView : SwiftUI.View {
   @SwiftUI.Binding @_projectedValueProperty($isNavigationActive) public var isNavigationActive: Swift.Bool {
