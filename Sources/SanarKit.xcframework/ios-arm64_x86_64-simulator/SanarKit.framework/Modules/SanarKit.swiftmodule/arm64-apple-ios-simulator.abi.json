@@ -20,8 +20,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "BWebView",
-        "printedName": "BWebView",
+        "name": "SKBooking",
+        "printedName": "SKBooking",
         "children": [
           {
             "kind": "Var",
@@ -36,8 +36,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:8SanarKit8BWebViewV3url10Foundation3URLVvp",
-            "mangledName": "$s8SanarKit8BWebViewV3url10Foundation3URLVvp",
+            "usr": "s:8SanarKit9SKBookingV3url10Foundation3URLVvp",
+            "mangledName": "$s8SanarKit9SKBookingV3url10Foundation3URLVvp",
             "moduleName": "SanarKit",
             "declAttributes": [
               "HasStorage",
@@ -59,8 +59,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8SanarKit8BWebViewV3url10Foundation3URLVvg",
-                "mangledName": "$s8SanarKit8BWebViewV3url10Foundation3URLVvg",
+                "usr": "s:8SanarKit9SKBookingV3url10Foundation3URLVvg",
+                "mangledName": "$s8SanarKit9SKBookingV3url10Foundation3URLVvg",
                 "moduleName": "SanarKit",
                 "implicit": true,
                 "accessorKind": "get"
@@ -100,8 +100,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:8SanarKit8BWebViewV18onNavigationActiony10Foundation3URLVcSgvp",
-            "mangledName": "$s8SanarKit8BWebViewV18onNavigationActiony10Foundation3URLVcSgvp",
+            "usr": "s:8SanarKit9SKBookingV18onNavigationActiony10Foundation3URLVcSgvp",
+            "mangledName": "$s8SanarKit9SKBookingV18onNavigationActiony10Foundation3URLVcSgvp",
             "moduleName": "SanarKit",
             "declAttributes": [
               "HasStorage",
@@ -143,8 +143,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8SanarKit8BWebViewV18onNavigationActiony10Foundation3URLVcSgvg",
-                "mangledName": "$s8SanarKit8BWebViewV18onNavigationActiony10Foundation3URLVcSgvg",
+                "usr": "s:8SanarKit9SKBookingV18onNavigationActiony10Foundation3URLVcSgvg",
+                "mangledName": "$s8SanarKit9SKBookingV18onNavigationActiony10Foundation3URLVcSgvg",
                 "moduleName": "SanarKit",
                 "implicit": true,
                 "accessorKind": "get"
@@ -184,8 +184,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:8SanarKit8BWebViewV14onDataReceivedySScSgvp",
-            "mangledName": "$s8SanarKit8BWebViewV14onDataReceivedySScSgvp",
+            "usr": "s:8SanarKit9SKBookingV14onDataReceivedySScSgvp",
+            "mangledName": "$s8SanarKit9SKBookingV14onDataReceivedySScSgvp",
             "moduleName": "SanarKit",
             "declAttributes": [
               "HasStorage",
@@ -227,8 +227,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8SanarKit8BWebViewV14onDataReceivedySScSgvg",
-                "mangledName": "$s8SanarKit8BWebViewV14onDataReceivedySScSgvg",
+                "usr": "s:8SanarKit9SKBookingV14onDataReceivedySScSgvg",
+                "mangledName": "$s8SanarKit9SKBookingV14onDataReceivedySScSgvg",
                 "moduleName": "SanarKit",
                 "implicit": true,
                 "accessorKind": "get"
@@ -248,8 +248,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:8SanarKit8BWebViewV18isNavigationActiveSbvp",
-            "mangledName": "$s8SanarKit8BWebViewV18isNavigationActiveSbvp",
+            "usr": "s:8SanarKit9SKBookingV18isNavigationActiveSbvp",
+            "mangledName": "$s8SanarKit9SKBookingV18isNavigationActiveSbvp",
             "moduleName": "SanarKit",
             "declAttributes": [
               "ProjectedValueProperty",
@@ -270,8 +270,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8SanarKit8BWebViewV18isNavigationActiveSbvg",
-                "mangledName": "$s8SanarKit8BWebViewV18isNavigationActiveSbvg",
+                "usr": "s:8SanarKit9SKBookingV18isNavigationActiveSbvg",
+                "mangledName": "$s8SanarKit9SKBookingV18isNavigationActiveSbvg",
                 "moduleName": "SanarKit",
                 "implicit": true,
                 "accessorKind": "get"
@@ -294,8 +294,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8SanarKit8BWebViewV18isNavigationActiveSbvs",
-                "mangledName": "$s8SanarKit8BWebViewV18isNavigationActiveSbvs",
+                "usr": "s:8SanarKit9SKBookingV18isNavigationActiveSbvs",
+                "mangledName": "$s8SanarKit9SKBookingV18isNavigationActiveSbvs",
                 "moduleName": "SanarKit",
                 "implicit": true,
                 "intro_Macosx": "10.15",
@@ -322,8 +322,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8SanarKit8BWebViewV18isNavigationActiveSbvM",
-                "mangledName": "$s8SanarKit8BWebViewV18isNavigationActiveSbvM",
+                "usr": "s:8SanarKit9SKBookingV18isNavigationActiveSbvM",
+                "mangledName": "$s8SanarKit9SKBookingV18isNavigationActiveSbvM",
                 "moduleName": "SanarKit",
                 "implicit": true,
                 "intro_Macosx": "10.15",
@@ -361,8 +361,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:8SanarKit8BWebViewV19$isNavigationActive7SwiftUI7BindingVySbGvp",
-            "mangledName": "$s8SanarKit8BWebViewV19$isNavigationActive7SwiftUI7BindingVySbGvp",
+            "usr": "s:8SanarKit9SKBookingV19$isNavigationActive7SwiftUI7BindingVySbGvp",
+            "mangledName": "$s8SanarKit9SKBookingV19$isNavigationActive7SwiftUI7BindingVySbGvp",
             "moduleName": "SanarKit",
             "implicit": true,
             "accessors": [
@@ -387,8 +387,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8SanarKit8BWebViewV19$isNavigationActive7SwiftUI7BindingVySbGvg",
-                "mangledName": "$s8SanarKit8BWebViewV19$isNavigationActive7SwiftUI7BindingVySbGvg",
+                "usr": "s:8SanarKit9SKBookingV19$isNavigationActive7SwiftUI7BindingVySbGvg",
+                "mangledName": "$s8SanarKit9SKBookingV19$isNavigationActive7SwiftUI7BindingVySbGvg",
                 "moduleName": "SanarKit",
                 "implicit": true,
                 "accessorKind": "get"
@@ -402,9 +402,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "BWebView",
-                "printedName": "SanarKit.BWebView",
-                "usr": "s:8SanarKit8BWebViewV"
+                "name": "SKBooking",
+                "printedName": "SanarKit.SKBooking",
+                "usr": "s:8SanarKit9SKBookingV"
               },
               {
                 "kind": "TypeNominal",
@@ -482,8 +482,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:8SanarKit8BWebViewV3url18onNavigationAction0F12DataReceived02isG6ActiveAC10Foundation3URLV_yAJcSgySScSg7SwiftUI7BindingVySbGtcfc",
-            "mangledName": "$s8SanarKit8BWebViewV3url18onNavigationAction0F12DataReceived02isG6ActiveAC10Foundation3URLV_yAJcSgySScSg7SwiftUI7BindingVySbGtcfc",
+            "usr": "s:8SanarKit9SKBookingV3url18onNavigationAction0E12DataReceived02isF6ActiveAC10Foundation3URLV_yAJcSgySScSg7SwiftUI7BindingVySbGtcfc",
+            "mangledName": "$s8SanarKit9SKBookingV3url18onNavigationAction0E12DataReceived02isF6ActiveAC10Foundation3URLV_yAJcSgySScSg7SwiftUI7BindingVySbGtcfc",
             "moduleName": "SanarKit",
             "declAttributes": [
               "AccessControl"
@@ -504,21 +504,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "UIViewRepresentableContext",
-                "printedName": "SwiftUI.UIViewRepresentableContext<SanarKit.BWebView>",
+                "printedName": "SwiftUI.UIViewRepresentableContext<SanarKit.SKBooking>",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "BWebView",
-                    "printedName": "SanarKit.BWebView",
-                    "usr": "s:8SanarKit8BWebViewV"
+                    "name": "SKBooking",
+                    "printedName": "SanarKit.SKBooking",
+                    "usr": "s:8SanarKit9SKBookingV"
                   }
                 ],
                 "usr": "s:7SwiftUI26UIViewRepresentableContextV"
               }
             ],
             "declKind": "Func",
-            "usr": "s:8SanarKit8BWebViewV10makeUIView7contextSo05WKWebD0C7SwiftUI0F20RepresentableContextVyACG_tF",
-            "mangledName": "$s8SanarKit8BWebViewV10makeUIView7contextSo05WKWebD0C7SwiftUI0F20RepresentableContextVyACG_tF",
+            "usr": "s:8SanarKit9SKBookingV10makeUIView7contextSo9WKWebViewC7SwiftUI0E20RepresentableContextVyACG_tF",
+            "mangledName": "$s8SanarKit9SKBookingV10makeUIView7contextSo9WKWebViewC7SwiftUI0E20RepresentableContextVyACG_tF",
             "moduleName": "SanarKit",
             "declAttributes": [
               "Custom",
@@ -545,21 +545,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "UIViewRepresentableContext",
-                "printedName": "SwiftUI.UIViewRepresentableContext<SanarKit.BWebView>",
+                "printedName": "SwiftUI.UIViewRepresentableContext<SanarKit.SKBooking>",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "BWebView",
-                    "printedName": "SanarKit.BWebView",
-                    "usr": "s:8SanarKit8BWebViewV"
+                    "name": "SKBooking",
+                    "printedName": "SanarKit.SKBooking",
+                    "usr": "s:8SanarKit9SKBookingV"
                   }
                 ],
                 "usr": "s:7SwiftUI26UIViewRepresentableContextV"
               }
             ],
             "declKind": "Func",
-            "usr": "s:8SanarKit8BWebViewV12updateUIView_7contextySo05WKWebD0C_7SwiftUI0F20RepresentableContextVyACGtF",
-            "mangledName": "$s8SanarKit8BWebViewV12updateUIView_7contextySo05WKWebD0C_7SwiftUI0F20RepresentableContextVyACGtF",
+            "usr": "s:8SanarKit9SKBookingV12updateUIView_7contextySo9WKWebViewC_7SwiftUI0E20RepresentableContextVyACGtF",
+            "mangledName": "$s8SanarKit9SKBookingV12updateUIView_7contextySo9WKWebViewC_7SwiftUI0E20RepresentableContextVyACGtF",
             "moduleName": "SanarKit",
             "declAttributes": [
               "Custom",
@@ -575,13 +575,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Coordinator",
-                "printedName": "SanarKit.BWebView.Coordinator",
-                "usr": "s:8SanarKit8BWebViewV11CoordinatorC"
+                "printedName": "SanarKit.SKBooking.Coordinator",
+                "usr": "s:8SanarKit9SKBookingV11CoordinatorC"
               }
             ],
             "declKind": "Func",
-            "usr": "s:8SanarKit8BWebViewV15makeCoordinatorAC0F0CyF",
-            "mangledName": "$s8SanarKit8BWebViewV15makeCoordinatorAC0F0CyF",
+            "usr": "s:8SanarKit9SKBookingV15makeCoordinatorAC0E0CyF",
+            "mangledName": "$s8SanarKit9SKBookingV15makeCoordinatorAC0E0CyF",
             "moduleName": "SanarKit",
             "declAttributes": [
               "Custom",
@@ -636,8 +636,8 @@
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:8SanarKit8BWebViewV11CoordinatorC03webD0_15decidePolicyFor15decisionHandlerySo05WKWebD0C_So18WKNavigationActionCySo0mnH0VctF",
-                "mangledName": "$s8SanarKit8BWebViewV11CoordinatorC03webD0_15decidePolicyFor15decisionHandlerySo05WKWebD0C_So18WKNavigationActionCySo0mnH0VctF",
+                "usr": "s:8SanarKit9SKBookingV11CoordinatorC7webView_15decidePolicyFor15decisionHandlerySo05WKWebF0C_So18WKNavigationActionCySo0mnH0VctF",
+                "mangledName": "$s8SanarKit9SKBookingV11CoordinatorC7webView_15decidePolicyFor15decisionHandlerySo05WKWebF0C_So18WKNavigationActionCySo0mnH0VctF",
                 "moduleName": "SanarKit",
                 "objc_name": "webView:decidePolicyForNavigationAction:decisionHandler:",
                 "declAttributes": [
@@ -670,8 +670,8 @@
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:8SanarKit8BWebViewV11CoordinatorC21userContentController_10didReceiveySo06WKUsergH0C_So15WKScriptMessageCtF",
-                "mangledName": "$s8SanarKit8BWebViewV11CoordinatorC21userContentController_10didReceiveySo06WKUsergH0C_So15WKScriptMessageCtF",
+                "usr": "s:8SanarKit9SKBookingV11CoordinatorC21userContentController_10didReceiveySo06WKUserfG0C_So15WKScriptMessageCtF",
+                "mangledName": "$s8SanarKit9SKBookingV11CoordinatorC21userContentController_10didReceiveySo06WKUserfG0C_So15WKScriptMessageCtF",
                 "moduleName": "SanarKit",
                 "objc_name": "userContentController:didReceiveScriptMessage:",
                 "declAttributes": [
@@ -688,13 +688,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Coordinator",
-                    "printedName": "SanarKit.BWebView.Coordinator",
-                    "usr": "s:8SanarKit8BWebViewV11CoordinatorC"
+                    "printedName": "SanarKit.SKBooking.Coordinator",
+                    "usr": "s:8SanarKit9SKBookingV11CoordinatorC"
                   }
                 ],
                 "declKind": "Constructor",
-                "usr": "s:8SanarKit8BWebViewV11CoordinatorCAEycfc",
-                "mangledName": "$s8SanarKit8BWebViewV11CoordinatorCAEycfc",
+                "usr": "s:8SanarKit9SKBookingV11CoordinatorCAEycfc",
+                "mangledName": "$s8SanarKit9SKBookingV11CoordinatorCAEycfc",
                 "moduleName": "SanarKit",
                 "overriding": true,
                 "implicit": true,
@@ -708,8 +708,8 @@
               }
             ],
             "declKind": "Class",
-            "usr": "s:8SanarKit8BWebViewV11CoordinatorC",
-            "mangledName": "$s8SanarKit8BWebViewV11CoordinatorC",
+            "usr": "s:8SanarKit9SKBookingV11CoordinatorC",
+            "mangledName": "$s8SanarKit9SKBookingV11CoordinatorC",
             "moduleName": "SanarKit",
             "declAttributes": [
               "AccessControl",
@@ -774,8 +774,8 @@
           }
         ],
         "declKind": "Struct",
-        "usr": "s:8SanarKit8BWebViewV",
-        "mangledName": "$s8SanarKit8BWebViewV",
+        "usr": "s:8SanarKit9SKBookingV",
+        "mangledName": "$s8SanarKit9SKBookingV",
         "moduleName": "SanarKit",
         "declAttributes": [
           "AccessControl"
@@ -807,8 +807,8 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Coordinator",
-                    "printedName": "SanarKit.BWebView.Coordinator",
-                    "usr": "s:8SanarKit8BWebViewV11CoordinatorC"
+                    "printedName": "SanarKit.SKBooking.Coordinator",
+                    "usr": "s:8SanarKit9SKBookingV11CoordinatorC"
                   }
                 ]
               }
@@ -856,8 +856,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "WebView",
-        "printedName": "WebView",
+        "name": "SKServices",
+        "printedName": "SKServices",
         "children": [
           {
             "kind": "Var",
@@ -872,8 +872,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:8SanarKit7WebViewV3url10Foundation3URLVvp",
-            "mangledName": "$s8SanarKit7WebViewV3url10Foundation3URLVvp",
+            "usr": "s:8SanarKit10SKServicesV3url10Foundation3URLVvp",
+            "mangledName": "$s8SanarKit10SKServicesV3url10Foundation3URLVvp",
             "moduleName": "SanarKit",
             "declAttributes": [
               "HasStorage",
@@ -895,8 +895,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8SanarKit7WebViewV3url10Foundation3URLVvg",
-                "mangledName": "$s8SanarKit7WebViewV3url10Foundation3URLVvg",
+                "usr": "s:8SanarKit10SKServicesV3url10Foundation3URLVvg",
+                "mangledName": "$s8SanarKit10SKServicesV3url10Foundation3URLVvg",
                 "moduleName": "SanarKit",
                 "implicit": true,
                 "accessorKind": "get"
@@ -936,8 +936,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:8SanarKit7WebViewV18onNavigationActiony10Foundation3URLVcSgvp",
-            "mangledName": "$s8SanarKit7WebViewV18onNavigationActiony10Foundation3URLVcSgvp",
+            "usr": "s:8SanarKit10SKServicesV18onNavigationActiony10Foundation3URLVcSgvp",
+            "mangledName": "$s8SanarKit10SKServicesV18onNavigationActiony10Foundation3URLVcSgvp",
             "moduleName": "SanarKit",
             "declAttributes": [
               "HasStorage",
@@ -979,8 +979,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8SanarKit7WebViewV18onNavigationActiony10Foundation3URLVcSgvg",
-                "mangledName": "$s8SanarKit7WebViewV18onNavigationActiony10Foundation3URLVcSgvg",
+                "usr": "s:8SanarKit10SKServicesV18onNavigationActiony10Foundation3URLVcSgvg",
+                "mangledName": "$s8SanarKit10SKServicesV18onNavigationActiony10Foundation3URLVcSgvg",
                 "moduleName": "SanarKit",
                 "implicit": true,
                 "accessorKind": "get"
@@ -1020,8 +1020,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:8SanarKit7WebViewV14onDataReceivedySScSgvp",
-            "mangledName": "$s8SanarKit7WebViewV14onDataReceivedySScSgvp",
+            "usr": "s:8SanarKit10SKServicesV14onDataReceivedySScSgvp",
+            "mangledName": "$s8SanarKit10SKServicesV14onDataReceivedySScSgvp",
             "moduleName": "SanarKit",
             "declAttributes": [
               "HasStorage",
@@ -1063,8 +1063,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8SanarKit7WebViewV14onDataReceivedySScSgvg",
-                "mangledName": "$s8SanarKit7WebViewV14onDataReceivedySScSgvg",
+                "usr": "s:8SanarKit10SKServicesV14onDataReceivedySScSgvg",
+                "mangledName": "$s8SanarKit10SKServicesV14onDataReceivedySScSgvg",
                 "moduleName": "SanarKit",
                 "implicit": true,
                 "accessorKind": "get"
@@ -1084,8 +1084,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:8SanarKit7WebViewV18isNavigationActiveSbvp",
-            "mangledName": "$s8SanarKit7WebViewV18isNavigationActiveSbvp",
+            "usr": "s:8SanarKit10SKServicesV18isNavigationActiveSbvp",
+            "mangledName": "$s8SanarKit10SKServicesV18isNavigationActiveSbvp",
             "moduleName": "SanarKit",
             "declAttributes": [
               "ProjectedValueProperty",
@@ -1106,8 +1106,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8SanarKit7WebViewV18isNavigationActiveSbvg",
-                "mangledName": "$s8SanarKit7WebViewV18isNavigationActiveSbvg",
+                "usr": "s:8SanarKit10SKServicesV18isNavigationActiveSbvg",
+                "mangledName": "$s8SanarKit10SKServicesV18isNavigationActiveSbvg",
                 "moduleName": "SanarKit",
                 "implicit": true,
                 "accessorKind": "get"
@@ -1130,8 +1130,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8SanarKit7WebViewV18isNavigationActiveSbvs",
-                "mangledName": "$s8SanarKit7WebViewV18isNavigationActiveSbvs",
+                "usr": "s:8SanarKit10SKServicesV18isNavigationActiveSbvs",
+                "mangledName": "$s8SanarKit10SKServicesV18isNavigationActiveSbvs",
                 "moduleName": "SanarKit",
                 "implicit": true,
                 "intro_Macosx": "10.15",
@@ -1158,8 +1158,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8SanarKit7WebViewV18isNavigationActiveSbvM",
-                "mangledName": "$s8SanarKit7WebViewV18isNavigationActiveSbvM",
+                "usr": "s:8SanarKit10SKServicesV18isNavigationActiveSbvM",
+                "mangledName": "$s8SanarKit10SKServicesV18isNavigationActiveSbvM",
                 "moduleName": "SanarKit",
                 "implicit": true,
                 "intro_Macosx": "10.15",
@@ -1197,8 +1197,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:8SanarKit7WebViewV19$isNavigationActive7SwiftUI7BindingVySbGvp",
-            "mangledName": "$s8SanarKit7WebViewV19$isNavigationActive7SwiftUI7BindingVySbGvp",
+            "usr": "s:8SanarKit10SKServicesV19$isNavigationActive7SwiftUI7BindingVySbGvp",
+            "mangledName": "$s8SanarKit10SKServicesV19$isNavigationActive7SwiftUI7BindingVySbGvp",
             "moduleName": "SanarKit",
             "implicit": true,
             "accessors": [
@@ -1223,8 +1223,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8SanarKit7WebViewV19$isNavigationActive7SwiftUI7BindingVySbGvg",
-                "mangledName": "$s8SanarKit7WebViewV19$isNavigationActive7SwiftUI7BindingVySbGvg",
+                "usr": "s:8SanarKit10SKServicesV19$isNavigationActive7SwiftUI7BindingVySbGvg",
+                "mangledName": "$s8SanarKit10SKServicesV19$isNavigationActive7SwiftUI7BindingVySbGvg",
                 "moduleName": "SanarKit",
                 "implicit": true,
                 "accessorKind": "get"
@@ -1238,9 +1238,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "WebView",
-                "printedName": "SanarKit.WebView",
-                "usr": "s:8SanarKit7WebViewV"
+                "name": "SKServices",
+                "printedName": "SanarKit.SKServices",
+                "usr": "s:8SanarKit10SKServicesV"
               },
               {
                 "kind": "TypeNominal",
@@ -1318,8 +1318,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:8SanarKit7WebViewV3url18onNavigationAction0F12DataReceived02isG6ActiveAC10Foundation3URLV_yAJcSgySScSg7SwiftUI7BindingVySbGtcfc",
-            "mangledName": "$s8SanarKit7WebViewV3url18onNavigationAction0F12DataReceived02isG6ActiveAC10Foundation3URLV_yAJcSgySScSg7SwiftUI7BindingVySbGtcfc",
+            "usr": "s:8SanarKit10SKServicesV3url18onNavigationAction0E12DataReceived02isF6ActiveAC10Foundation3URLV_yAJcSgySScSg7SwiftUI7BindingVySbGtcfc",
+            "mangledName": "$s8SanarKit10SKServicesV3url18onNavigationAction0E12DataReceived02isF6ActiveAC10Foundation3URLV_yAJcSgySScSg7SwiftUI7BindingVySbGtcfc",
             "moduleName": "SanarKit",
             "declAttributes": [
               "AccessControl"
@@ -1340,21 +1340,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "UIViewRepresentableContext",
-                "printedName": "SwiftUI.UIViewRepresentableContext<SanarKit.WebView>",
+                "printedName": "SwiftUI.UIViewRepresentableContext<SanarKit.SKServices>",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "WebView",
-                    "printedName": "SanarKit.WebView",
-                    "usr": "s:8SanarKit7WebViewV"
+                    "name": "SKServices",
+                    "printedName": "SanarKit.SKServices",
+                    "usr": "s:8SanarKit10SKServicesV"
                   }
                 ],
                 "usr": "s:7SwiftUI26UIViewRepresentableContextV"
               }
             ],
             "declKind": "Func",
-            "usr": "s:8SanarKit7WebViewV10makeUIView7contextSo05WKWebD0C7SwiftUI0F20RepresentableContextVyACG_tF",
-            "mangledName": "$s8SanarKit7WebViewV10makeUIView7contextSo05WKWebD0C7SwiftUI0F20RepresentableContextVyACG_tF",
+            "usr": "s:8SanarKit10SKServicesV10makeUIView7contextSo9WKWebViewC7SwiftUI0E20RepresentableContextVyACG_tF",
+            "mangledName": "$s8SanarKit10SKServicesV10makeUIView7contextSo9WKWebViewC7SwiftUI0E20RepresentableContextVyACG_tF",
             "moduleName": "SanarKit",
             "declAttributes": [
               "Custom",
@@ -1381,21 +1381,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "UIViewRepresentableContext",
-                "printedName": "SwiftUI.UIViewRepresentableContext<SanarKit.WebView>",
+                "printedName": "SwiftUI.UIViewRepresentableContext<SanarKit.SKServices>",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "WebView",
-                    "printedName": "SanarKit.WebView",
-                    "usr": "s:8SanarKit7WebViewV"
+                    "name": "SKServices",
+                    "printedName": "SanarKit.SKServices",
+                    "usr": "s:8SanarKit10SKServicesV"
                   }
                 ],
                 "usr": "s:7SwiftUI26UIViewRepresentableContextV"
               }
             ],
             "declKind": "Func",
-            "usr": "s:8SanarKit7WebViewV12updateUIView_7contextySo05WKWebD0C_7SwiftUI0F20RepresentableContextVyACGtF",
-            "mangledName": "$s8SanarKit7WebViewV12updateUIView_7contextySo05WKWebD0C_7SwiftUI0F20RepresentableContextVyACGtF",
+            "usr": "s:8SanarKit10SKServicesV12updateUIView_7contextySo9WKWebViewC_7SwiftUI0E20RepresentableContextVyACGtF",
+            "mangledName": "$s8SanarKit10SKServicesV12updateUIView_7contextySo9WKWebViewC_7SwiftUI0E20RepresentableContextVyACGtF",
             "moduleName": "SanarKit",
             "declAttributes": [
               "Custom",
@@ -1411,13 +1411,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Coordinator",
-                "printedName": "SanarKit.WebView.Coordinator",
-                "usr": "s:8SanarKit7WebViewV11CoordinatorC"
+                "printedName": "SanarKit.SKServices.Coordinator",
+                "usr": "s:8SanarKit10SKServicesV11CoordinatorC"
               }
             ],
             "declKind": "Func",
-            "usr": "s:8SanarKit7WebViewV15makeCoordinatorAC0F0CyF",
-            "mangledName": "$s8SanarKit7WebViewV15makeCoordinatorAC0F0CyF",
+            "usr": "s:8SanarKit10SKServicesV15makeCoordinatorAC0E0CyF",
+            "mangledName": "$s8SanarKit10SKServicesV15makeCoordinatorAC0E0CyF",
             "moduleName": "SanarKit",
             "declAttributes": [
               "Custom",
@@ -1472,8 +1472,8 @@
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:8SanarKit7WebViewV11CoordinatorC03webD0_15decidePolicyFor15decisionHandlerySo05WKWebD0C_So18WKNavigationActionCySo0mnH0VctF",
-                "mangledName": "$s8SanarKit7WebViewV11CoordinatorC03webD0_15decidePolicyFor15decisionHandlerySo05WKWebD0C_So18WKNavigationActionCySo0mnH0VctF",
+                "usr": "s:8SanarKit10SKServicesV11CoordinatorC7webView_15decidePolicyFor15decisionHandlerySo05WKWebF0C_So18WKNavigationActionCySo0mnH0VctF",
+                "mangledName": "$s8SanarKit10SKServicesV11CoordinatorC7webView_15decidePolicyFor15decisionHandlerySo05WKWebF0C_So18WKNavigationActionCySo0mnH0VctF",
                 "moduleName": "SanarKit",
                 "objc_name": "webView:decidePolicyForNavigationAction:decisionHandler:",
                 "declAttributes": [
@@ -1506,8 +1506,8 @@
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:8SanarKit7WebViewV11CoordinatorC21userContentController_10didReceiveySo06WKUsergH0C_So15WKScriptMessageCtF",
-                "mangledName": "$s8SanarKit7WebViewV11CoordinatorC21userContentController_10didReceiveySo06WKUsergH0C_So15WKScriptMessageCtF",
+                "usr": "s:8SanarKit10SKServicesV11CoordinatorC21userContentController_10didReceiveySo06WKUserfG0C_So15WKScriptMessageCtF",
+                "mangledName": "$s8SanarKit10SKServicesV11CoordinatorC21userContentController_10didReceiveySo06WKUserfG0C_So15WKScriptMessageCtF",
                 "moduleName": "SanarKit",
                 "objc_name": "userContentController:didReceiveScriptMessage:",
                 "declAttributes": [
@@ -1524,13 +1524,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Coordinator",
-                    "printedName": "SanarKit.WebView.Coordinator",
-                    "usr": "s:8SanarKit7WebViewV11CoordinatorC"
+                    "printedName": "SanarKit.SKServices.Coordinator",
+                    "usr": "s:8SanarKit10SKServicesV11CoordinatorC"
                   }
                 ],
                 "declKind": "Constructor",
-                "usr": "s:8SanarKit7WebViewV11CoordinatorCAEycfc",
-                "mangledName": "$s8SanarKit7WebViewV11CoordinatorCAEycfc",
+                "usr": "s:8SanarKit10SKServicesV11CoordinatorCAEycfc",
+                "mangledName": "$s8SanarKit10SKServicesV11CoordinatorCAEycfc",
                 "moduleName": "SanarKit",
                 "overriding": true,
                 "implicit": true,
@@ -1544,8 +1544,8 @@
               }
             ],
             "declKind": "Class",
-            "usr": "s:8SanarKit7WebViewV11CoordinatorC",
-            "mangledName": "$s8SanarKit7WebViewV11CoordinatorC",
+            "usr": "s:8SanarKit10SKServicesV11CoordinatorC",
+            "mangledName": "$s8SanarKit10SKServicesV11CoordinatorC",
             "moduleName": "SanarKit",
             "declAttributes": [
               "AccessControl",
@@ -1610,8 +1610,8 @@
           }
         ],
         "declKind": "Struct",
-        "usr": "s:8SanarKit7WebViewV",
-        "mangledName": "$s8SanarKit7WebViewV",
+        "usr": "s:8SanarKit10SKServicesV",
+        "mangledName": "$s8SanarKit10SKServicesV",
         "moduleName": "SanarKit",
         "declAttributes": [
           "AccessControl"
@@ -1643,8 +1643,8 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Coordinator",
-                    "printedName": "SanarKit.WebView.Coordinator",
-                    "usr": "s:8SanarKit7WebViewV11CoordinatorC"
+                    "printedName": "SanarKit.SKServices.Coordinator",
+                    "usr": "s:8SanarKit10SKServicesV11CoordinatorC"
                   }
                 ]
               }
@@ -2565,30 +2565,30 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/maren\/Documents\/SanarSDK\/Framework\/SanarKit\/SanarKit\/BWebView.swift",
+      "filePath": "\/Users\/maren\/Documents\/SanarSDK\/Framework\/SanarKit\/SanarKit\/SKBooking.swift",
       "kind": "StringLiteral",
-      "offset": 1130,
+      "offset": 1131,
       "length": 11,
       "value": "\"SanarKit.Coordinator\""
     },
     {
-      "filePath": "\/Users\/maren\/Documents\/SanarSDK\/Framework\/SanarKit\/SanarKit\/WebView.swift",
+      "filePath": "\/Users\/maren\/Documents\/SanarSDK\/Framework\/SanarKit\/SanarKit\/SKServices.swift",
       "kind": "StringLiteral",
-      "offset": 1221,
+      "offset": 1224,
       "length": 11,
       "value": "\"SanarKit.Coordinator\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/SanarSDK\/Framework\/SanarKit\/SanarKit\/ServiceView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1981,
+      "offset": 1984,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/maren\/Documents\/SanarSDK\/Framework\/SanarKit\/SanarKit\/BookingListView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2021,
+      "offset": 2017,
       "length": 4,
       "value": "true"
     }

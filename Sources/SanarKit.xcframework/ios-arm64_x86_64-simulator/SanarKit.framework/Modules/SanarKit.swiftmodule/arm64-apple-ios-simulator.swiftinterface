@@ -9,7 +9,7 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public struct BWebView : SwiftUI.UIViewRepresentable {
+public struct SKBooking : SwiftUI.UIViewRepresentable {
   public let url: Foundation.URL
   public let onNavigationAction: ((Foundation.URL) -> Swift.Void)?
   public let onDataReceived: ((Swift.String) -> Swift.Void)?
@@ -24,9 +24,9 @@ public struct BWebView : SwiftUI.UIViewRepresentable {
     get
   }
   public init(url: Foundation.URL, onNavigationAction: ((Foundation.URL) -> Swift.Void)? = nil, onDataReceived: ((Swift.String) -> Swift.Void)? = nil, isNavigationActive: SwiftUI.Binding<Swift.Bool>)
-  @_Concurrency.MainActor(unsafe) public func makeUIView(context: SanarKit.BWebView.Context) -> WebKit.WKWebView
-  @_Concurrency.MainActor(unsafe) public func updateUIView(_ uiView: WebKit.WKWebView, context: SanarKit.BWebView.Context)
-  @_Concurrency.MainActor(unsafe) public func makeCoordinator() -> SanarKit.BWebView.Coordinator
+  @_Concurrency.MainActor(unsafe) public func makeUIView(context: SanarKit.SKBooking.Context) -> WebKit.WKWebView
+  @_Concurrency.MainActor(unsafe) public func updateUIView(_ uiView: WebKit.WKWebView, context: SanarKit.SKBooking.Context)
+  @_Concurrency.MainActor(unsafe) public func makeCoordinator() -> SanarKit.SKBooking.Coordinator
   @objc @_hasMissingDesignatedInitializers public class Coordinator : ObjectiveC.NSObject, WebKit.WKNavigationDelegate, WebKit.WKScriptMessageHandler {
     @objc public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
     @objc public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
@@ -35,7 +35,7 @@ public struct BWebView : SwiftUI.UIViewRepresentable {
   public typealias Body = Swift.Never
   public typealias UIViewType = WebKit.WKWebView
 }
-public struct WebView : SwiftUI.UIViewRepresentable {
+public struct SKServices : SwiftUI.UIViewRepresentable {
   public let url: Foundation.URL
   public let onNavigationAction: ((Foundation.URL) -> Swift.Void)?
   public let onDataReceived: ((Swift.String) -> Swift.Void)?
@@ -50,9 +50,9 @@ public struct WebView : SwiftUI.UIViewRepresentable {
     get
   }
   public init(url: Foundation.URL, onNavigationAction: ((Foundation.URL) -> Swift.Void)? = nil, onDataReceived: ((Swift.String) -> Swift.Void)? = nil, isNavigationActive: SwiftUI.Binding<Swift.Bool>)
-  @_Concurrency.MainActor(unsafe) public func makeUIView(context: SanarKit.WebView.Context) -> WebKit.WKWebView
-  @_Concurrency.MainActor(unsafe) public func updateUIView(_ uiView: WebKit.WKWebView, context: SanarKit.WebView.Context)
-  @_Concurrency.MainActor(unsafe) public func makeCoordinator() -> SanarKit.WebView.Coordinator
+  @_Concurrency.MainActor(unsafe) public func makeUIView(context: SanarKit.SKServices.Context) -> WebKit.WKWebView
+  @_Concurrency.MainActor(unsafe) public func updateUIView(_ uiView: WebKit.WKWebView, context: SanarKit.SKServices.Context)
+  @_Concurrency.MainActor(unsafe) public func makeCoordinator() -> SanarKit.SKServices.Coordinator
   @objc @_hasMissingDesignatedInitializers public class Coordinator : ObjectiveC.NSObject, WebKit.WKNavigationDelegate, WebKit.WKScriptMessageHandler {
     @objc public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
     @objc public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
