@@ -1,6 +1,0 @@
-framework module SanarKit {
-  umbrella header "SanarKit.h"
-  export *
-
-  module * { export * }
-}
