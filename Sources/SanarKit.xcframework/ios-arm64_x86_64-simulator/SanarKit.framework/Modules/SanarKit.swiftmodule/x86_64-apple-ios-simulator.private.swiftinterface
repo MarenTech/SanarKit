@@ -10,19 +10,6 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 public struct SKBooking : SwiftUI.UIViewRepresentable {
-  public let url: Foundation.URL
-  public let onNavigationAction: ((Foundation.URL) -> Swift.Void)?
-  public let onDataReceived: ((Swift.String) -> Swift.Void)?
-  @SwiftUI.Binding @_projectedValueProperty($isNavigationActive) public var isNavigationActive: Swift.Bool {
-    get
-    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-    nonmutating set
-    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-    nonmutating _modify
-  }
-  public var $isNavigationActive: SwiftUI.Binding<Swift.Bool> {
-    get
-  }
   public init(url: Foundation.URL, onNavigationAction: ((Foundation.URL) -> Swift.Void)? = nil, onDataReceived: ((Swift.String) -> Swift.Void)? = nil, isNavigationActive: SwiftUI.Binding<Swift.Bool>)
   @_Concurrency.MainActor(unsafe) public func makeUIView(context: SanarKit.SKBooking.Context) -> WebKit.WKWebView
   @_Concurrency.MainActor(unsafe) public func updateUIView(_ uiView: WebKit.WKWebView, context: SanarKit.SKBooking.Context)
@@ -36,19 +23,6 @@ public struct SKBooking : SwiftUI.UIViewRepresentable {
   public typealias UIViewType = WebKit.WKWebView
 }
 public struct SKServices : SwiftUI.UIViewRepresentable {
-  public let url: Foundation.URL
-  public let onNavigationAction: ((Foundation.URL) -> Swift.Void)?
-  public let onDataReceived: ((Swift.String) -> Swift.Void)?
-  @SwiftUI.Binding @_projectedValueProperty($isNavigationActive) public var isNavigationActive: Swift.Bool {
-    get
-    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-    nonmutating set
-    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-    nonmutating _modify
-  }
-  public var $isNavigationActive: SwiftUI.Binding<Swift.Bool> {
-    get
-  }
   public init(url: Foundation.URL, onNavigationAction: ((Foundation.URL) -> Swift.Void)? = nil, onDataReceived: ((Swift.String) -> Swift.Void)? = nil, isNavigationActive: SwiftUI.Binding<Swift.Bool>)
   @_Concurrency.MainActor(unsafe) public func makeUIView(context: SanarKit.SKServices.Context) -> WebKit.WKWebView
   @_Concurrency.MainActor(unsafe) public func updateUIView(_ uiView: WebKit.WKWebView, context: SanarKit.SKServices.Context)
@@ -86,6 +60,7 @@ public struct SanarConnect {
   public static func sanarConnect(cid: Swift.String, bundleId: Swift.String, requestBody: [Swift.String : Any]) async throws -> Swift.String
   #endif
   public static func sanarDisconnect()
+  public static func sanarController()
 }
 public struct BookingListView : SwiftUI.View {
   @SwiftUI.Binding @_projectedValueProperty($isNavigationActive) public var isNavigationActive: Swift.Bool {
