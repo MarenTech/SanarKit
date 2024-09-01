@@ -53,14 +53,13 @@ public struct ServiceView : SwiftUI.View {
   public typealias Body = @_opaqueReturnTypeOf("$s8SanarKit11ServiceViewV4bodyQrvp", 0) __
 }
 
-public struct SanarConnect {
+public struct SKManager {
   public static var clientAuth: [Swift.String : Any]?
   public init()
   #if compiler(>=5.3) && $AsyncAwait
-  public static func sanarConnect(cid: Swift.String, bundleId: Swift.String, requestBody: [Swift.String : Any]) async throws -> Swift.String
+  public static func connect(cid: Swift.String, bundleId: Swift.String, clientInfo: [Swift.String : Any], lang: Swift.String = "en") async throws -> Swift.String
   #endif
-  public static func sanarDisconnect()
-  public static func sanarController()
+  public static func disconnect()
 }
 public struct BookingListView : SwiftUI.View {
   @SwiftUI.Binding @_projectedValueProperty($isNavigationActive) public var isNavigationActive: Swift.Bool {

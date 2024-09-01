@@ -1250,8 +1250,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "SanarConnect",
-        "printedName": "SanarConnect",
+        "name": "SKManager",
+        "printedName": "SKManager",
         "children": [
           {
             "kind": "Var",
@@ -1287,8 +1287,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:8SanarKit0A7ConnectV10clientAuthSDySSypGSgvpZ",
-            "mangledName": "$s8SanarKit0A7ConnectV10clientAuthSDySSypGSgvpZ",
+            "usr": "s:8SanarKit9SKManagerV10clientAuthSDySSypGSgvpZ",
+            "mangledName": "$s8SanarKit9SKManagerV10clientAuthSDySSypGSgvpZ",
             "moduleName": "SanarKit",
             "static": true,
             "declAttributes": [
@@ -1333,8 +1333,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8SanarKit0A7ConnectV10clientAuthSDySSypGSgvgZ",
-                "mangledName": "$s8SanarKit0A7ConnectV10clientAuthSDySSypGSgvgZ",
+                "usr": "s:8SanarKit9SKManagerV10clientAuthSDySSypGSgvgZ",
+                "mangledName": "$s8SanarKit9SKManagerV10clientAuthSDySSypGSgvgZ",
                 "moduleName": "SanarKit",
                 "static": true,
                 "implicit": true,
@@ -1379,8 +1379,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8SanarKit0A7ConnectV10clientAuthSDySSypGSgvsZ",
-                "mangledName": "$s8SanarKit0A7ConnectV10clientAuthSDySSypGSgvsZ",
+                "usr": "s:8SanarKit9SKManagerV10clientAuthSDySSypGSgvsZ",
+                "mangledName": "$s8SanarKit9SKManagerV10clientAuthSDySSypGSgvsZ",
                 "moduleName": "SanarKit",
                 "static": true,
                 "implicit": true,
@@ -1398,8 +1398,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8SanarKit0A7ConnectV10clientAuthSDySSypGSgvMZ",
-                "mangledName": "$s8SanarKit0A7ConnectV10clientAuthSDySSypGSgvMZ",
+                "usr": "s:8SanarKit9SKManagerV10clientAuthSDySSypGSgvMZ",
+                "mangledName": "$s8SanarKit9SKManagerV10clientAuthSDySSypGSgvMZ",
                 "moduleName": "SanarKit",
                 "static": true,
                 "implicit": true,
@@ -1414,14 +1414,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "SanarConnect",
-                "printedName": "SanarKit.SanarConnect",
-                "usr": "s:8SanarKit0A7ConnectV"
+                "name": "SKManager",
+                "printedName": "SanarKit.SKManager",
+                "usr": "s:8SanarKit9SKManagerV"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:8SanarKit0A7ConnectVACycfc",
-            "mangledName": "$s8SanarKit0A7ConnectVACycfc",
+            "usr": "s:8SanarKit9SKManagerVACycfc",
+            "mangledName": "$s8SanarKit9SKManagerVACycfc",
             "moduleName": "SanarKit",
             "declAttributes": [
               "AccessControl"
@@ -1430,8 +1430,8 @@
           },
           {
             "kind": "Function",
-            "name": "sanarConnect",
-            "printedName": "sanarConnect(cid:bundleId:requestBody:)",
+            "name": "connect",
+            "printedName": "connect(cid:bundleId:clientInfo:lang:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1469,11 +1469,18 @@
                   }
                 ],
                 "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:8SanarKit0A7ConnectV05sanarC03cid8bundleId11requestBodyS2S_SSSDySSypGtYaKFZ",
-            "mangledName": "$s8SanarKit0A7ConnectV05sanarC03cid8bundleId11requestBodyS2S_SSSDySSypGtYaKFZ",
+            "usr": "s:8SanarKit9SKManagerV7connect3cid8bundleId10clientInfo4langS2S_SSSDySSypGSStYaKFZ",
+            "mangledName": "$s8SanarKit9SKManagerV7connect3cid8bundleId10clientInfo4langS2S_SSSDySSypGSStYaKFZ",
             "moduleName": "SanarKit",
             "static": true,
             "declAttributes": [
@@ -1485,8 +1492,8 @@
           },
           {
             "kind": "Function",
-            "name": "sanarDisconnect",
-            "printedName": "sanarDisconnect()",
+            "name": "disconnect",
+            "printedName": "disconnect()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1495,8 +1502,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8SanarKit0A7ConnectV15sanarDisconnectyyFZ",
-            "mangledName": "$s8SanarKit0A7ConnectV15sanarDisconnectyyFZ",
+            "usr": "s:8SanarKit9SKManagerV10disconnectyyFZ",
+            "mangledName": "$s8SanarKit9SKManagerV10disconnectyyFZ",
             "moduleName": "SanarKit",
             "static": true,
             "declAttributes": [
@@ -1504,32 +1511,11 @@
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "sanarController",
-            "printedName": "sanarController()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8SanarKit0A7ConnectV15sanarControlleryyFZ",
-            "mangledName": "$s8SanarKit0A7ConnectV15sanarControlleryyFZ",
-            "moduleName": "SanarKit",
-            "static": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
-        "usr": "s:8SanarKit0A7ConnectV",
-        "mangledName": "$s8SanarKit0A7ConnectV",
+        "usr": "s:8SanarKit9SKManagerV",
+        "mangledName": "$s8SanarKit9SKManagerV",
         "moduleName": "SanarKit",
         "declAttributes": [
           "AccessControl"
@@ -1858,14 +1844,21 @@
     {
       "filePath": "\/Users\/maren\/Documents\/SanarSDK\/Framework\/SanarKit\/SanarKit\/ServiceView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1931,
+      "offset": 1925,
       "length": 4,
       "value": "true"
     },
     {
+      "filePath": "\/Users\/maren\/Documents\/SanarSDK\/Framework\/SanarKit\/SanarKit\/SKManager.swift",
+      "kind": "StringLiteral",
+      "offset": 311,
+      "length": 4,
+      "value": "\"en\""
+    },
+    {
       "filePath": "\/Users\/maren\/Documents\/SanarSDK\/Framework\/SanarKit\/SanarKit\/BookingListView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2017,
+      "offset": 2011,
       "length": 4,
       "value": "true"
     }
