@@ -4,10 +4,10 @@ SanarKit - is a Swift framework designed to seamlessly integrate Sanar services 
 
 ### SanarKit will support the following impmenentations
 
-- ### [connect](#)
-- ### [disconnect](#)
-- ### [ServiceView](#)
-- ### [BookingListView](#)
+- ### [connect](https://github.com/MarenTech/SanarKit?tab=readme-ov-file#connect-1)
+- ### [disconnect](https://github.com/MarenTech/SanarKit?tab=readme-ov-file#disconnect-1)
+- ### [ServiceView](https://github.com/MarenTech/SanarKit?tab=readme-ov-file#serviceview-1)
+- ### [BookingListView](https://github.com/MarenTech/SanarKit?tab=readme-ov-file#bookinglistview-1)
 
 ## Installation Steps
 
@@ -55,7 +55,7 @@ Change Language Example :
 SKManager.connect(
     cid: "<sanar-client-token>",
     bundleId: "<app-bundle-id>",
-    clientData: ClientData,
+    clientData: [ClientData](#clientdata-),
     lang: "ar" // en
 )
 ```
@@ -95,7 +95,7 @@ let clientData: [String: Any] = [
 SKManager.connect(
     cid: "<client-id>",
     bundleId: "<com.example.demo>",
-    requestBody: clientData
+    requestBody: [clientData](#clientdata-)
 )
 ```
 
