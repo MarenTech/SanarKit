@@ -29,7 +29,10 @@ Import SanarKit
 ### SanarKit implementations
 
 # connect
-The SanarKit SDK provides a seamless way to integrate authentication and connection services into your iOS applications. One of the key methods in the SDK is SKManager.connect, which allows your application to authenticate with SanarServices
+The SanarKit SDK provides a seamless way to integrate authentication and connection services into your iOS applications. One of the key methods in the SDK is SKManager.connect, which allows your application to authenticate with SanarServices. To effectively integrate authentication and connection services into your iOS application using the SanarKit SDK, you should ensure the following:
+
+#### - Initialization: Before invoking any Sanar flows or making use of other SDK features, you must initialize the SDK. This typically involves setting up required configurations and ensuring that your application is properly set up to communicate with SanarServices.
+#### - Calling SKManager.connect: The SKManager.connect method should be called as an essential step to authenticate with SanarServices. This method establishes a connection and handles authentication, which is crucial for accessing any subsequent SDK functionalities or services.
 
 ```swift
 SKManager.connect(
