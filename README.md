@@ -115,18 +115,19 @@ The SanarKit SDK includes a ServiceView that allows your application to navigate
 SanarKit.ServiceView(isNavigationActive: $isService)
 ```
 
-Description
+### Description
 The ServiceView component in the SanarKit SDK is designed to facilitate the entire booking process through a pre-built UI flow. By simply navigating to ServiceView, your application can leverage the SDK's capabilities to manage the booking flow without any extra setup or customization.
 
-## Method Parameters
-
+### Method Parameters
 `isNavigationActive` (Binding<Bool>):
 
-Description: A binding boolean that controls the navigation state to the ServiceView. When set to true, the app will navigate to the ServiceView and initiate the booking flow.
+### Description: 
+A binding boolean that controls the navigation state to the ServiceView. When set to true, the app will navigate to the ServiceView and initiate the booking flow.
 
-Example: $isService
+Example: `$isService`
 
-Example Usage
+
+## Example Usage
 
 ```swift
 import SwiftUI
@@ -147,8 +148,8 @@ struct ContentView: View {
 ```
 
 ## How It Works
-Navigation: The NavigationLink uses the isService binding to determine whether to navigate to ServiceView. When isService becomes true, the app navigates to the SanarKit.ServiceView.
-Booking Flow: The ServiceView then manages the entire booking flow, providing a seamless user experience.
+- Navigation: The NavigationLink uses the isService binding to determine whether to navigate to ServiceView. When isService becomes true, the app navigates to the SanarKit.ServiceView.
+- Booking Flow: The ServiceView then manages the entire booking flow, providing a seamless user experience.
 
 # BookingListView
 The SanarKit SDK also provides a BookingListView that allows your application to navigate directly to the post-booking flow. This flow includes functionalities such as viewing appointment lists, appointment details, and chatting with the provider. By navigating to BookingListView, your app can seamlessly manage the post-booking process within the SDK.
@@ -157,16 +158,18 @@ The SanarKit SDK also provides a BookingListView that allows your application to
 SanarKit.BookingListView(isNavigationActive: $isBooking)
 ```
 
-Description
+### Description
+
 The BookingListView component in the SanarKit SDK is designed to handle the post-booking process. It provides a comprehensive view of appointments, including appointment lists, detailed information about each appointment, and an integrated chat feature for communication with the provider.
 
-Method Parameters
+### Method Parameters
 `isNavigationActive` (Binding<Bool>):
 
-Description: A binding boolean that controls the navigation state to the BookingListView. When set to true, the app will navigate to the BookingListView and manage the post-booking flow.
-Example: $isBooking
+### Description: 
+A binding boolean that controls the navigation state to the BookingListView. When set to true, the app will navigate to the BookingListView and manage the post-booking flow.
+Example: `$isBooking`
 
-Example Usage : 
+## Example Usage : 
 
 ```swift
 import SwiftUI
@@ -187,10 +190,9 @@ struct ContentView: View {
 }
 ```
 
-How It Works
-
-Navigation: The NavigationLink uses the isBooking binding to determine whether to navigate to BookingListView. When isBooking becomes true, the app navigates to the SanarKit.BookingListView.
-Post-Booking Flow: The BookingListView then manages the entire post-booking flow, including displaying the appointment list, detailed information about each appointment, and providing a chat feature to communicate with the provider.
+## How It Works
+- Navigation: The NavigationLink uses the isBooking binding to determine whether to navigate to BookingListView. When isBooking becomes true, the app navigates to the SanarKit.BookingListView.
+- Post-Booking Flow: The BookingListView then manages the entire post-booking flow, including displaying the appointment list, detailed information about each appointment, and providing a chat feature to communicate with the provider.
 
 For more details and implementation examples, please check the example repository [Here](https://github.com/MarenTech/ExampleSanarKitSwift).
 
