@@ -45,7 +45,7 @@ Parameters :
 
 `bundleId` (String) : The bundleId parameter represents the unique bundle identifier for your iOS application. It ensures that the request is coming from the correct application and is used to validate the app with the Sanar Services.
 
-`clientData` (Dictionary) : contains the user or client data that needs to be sent to the SanarService to create the User Session
+`clientData` (Dictionary) : [clientData](#clientdata-) contains the user or client data that needs to be sent to the SanarService to create the User Session
 
 `lang` (String) Optional :  the language parameter to switch between Arabic and English, default value will be English
 
@@ -55,7 +55,7 @@ Change Language Example :
 SKManager.connect(
     cid: "<sanar-client-token>",
     bundleId: "<app-bundle-id>",
-    clientData: [ClientData](#clientdata-),
+    clientData: ClientData,
     lang: "ar" // en
 )
 ```
@@ -95,7 +95,7 @@ let clientData: [String: Any] = [
 SKManager.connect(
     cid: "<client-id>",
     bundleId: "<com.example.demo>",
-    requestBody: [clientData](#clientdata-)
+    requestBody: clientData
 )
 ```
 
