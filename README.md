@@ -192,6 +192,6 @@ How It Works
 Navigation: The NavigationLink uses the isBooking binding to determine whether to navigate to BookingListView. When isBooking becomes true, the app navigates to the SanarKit.BookingListView.
 Post-Booking Flow: The BookingListView then manages the entire post-booking flow, including displaying the appointment list, detailed information about each appointment, and providing a chat feature to communicate with the provider.
 
-For more details and implementation examples, please check the example repository [Here](#).
+For more details and implementation examples, please check the example repository [Here](https://github.com/MarenTech/ExampleSanarKitSwift).
 
 
