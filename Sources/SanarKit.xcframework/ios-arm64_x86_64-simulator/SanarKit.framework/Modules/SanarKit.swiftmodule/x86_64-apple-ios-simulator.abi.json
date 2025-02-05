@@ -26,7 +26,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(url:onNavigationAction:onDataReceived:isNavigationActive:)",
+            "printedName": "init(url:onNavigationAction:onDataReceived:isNavigationActive:isChatActive:chatData:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -107,11 +107,52 @@
                   }
                 ],
                 "usr": "s:7SwiftUI7BindingV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Binding",
+                "printedName": "SwiftUI.Binding<Swift.Bool>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:7SwiftUI7BindingV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Binding",
+                "printedName": "SwiftUI.Binding<[Swift.String : Any]>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:7SwiftUI7BindingV"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:8SanarKit9SKBookingV3url18onNavigationAction0E12DataReceived02isF6ActiveAC10Foundation3URLV_yAJcSgySScSg7SwiftUI7BindingVySbGtcfc",
-            "mangledName": "$s8SanarKit9SKBookingV3url18onNavigationAction0E12DataReceived02isF6ActiveAC10Foundation3URLV_yAJcSgySScSg7SwiftUI7BindingVySbGtcfc",
+            "usr": "s:8SanarKit9SKBookingV3url18onNavigationAction0E12DataReceived02isF6Active0j4ChatK004chatH0AC10Foundation3URLV_yALcSgySScSg7SwiftUI7BindingVySbGArQySDySSypGGtcfc",
+            "mangledName": "$s8SanarKit9SKBookingV3url18onNavigationAction0E12DataReceived02isF6Active0j4ChatK004chatH0AC10Foundation3URLV_yALcSgySScSg7SwiftUI7BindingVySbGArQySDySSypGGtcfc",
             "moduleName": "SanarKit",
             "declAttributes": [
               "Preconcurrency",
@@ -1054,6 +1095,386 @@
         "moduleName": "SanarKit"
       },
       {
+        "kind": "Import",
+        "name": "SafariServices",
+        "printedName": "SafariServices",
+        "declKind": "Import",
+        "moduleName": "SanarKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SKConsultation",
+        "printedName": "SKConsultation",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(url:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SKConsultation",
+                "printedName": "SanarKit.SKConsultation",
+                "usr": "s:8SanarKit14SKConsultationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8SanarKit14SKConsultationV3urlAC10Foundation3URLV_tcfc",
+            "mangledName": "$s8SanarKit14SKConsultationV3urlAC10Foundation3URLV_tcfc",
+            "moduleName": "SanarKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "makeUIViewController",
+            "printedName": "makeUIViewController(context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SFSafariViewController",
+                "printedName": "SafariServices.SFSafariViewController",
+                "usr": "c:objc(cs)SFSafariViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewControllerRepresentableContext",
+                "printedName": "SwiftUI.UIViewControllerRepresentableContext<SanarKit.SKConsultation>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SKConsultation",
+                    "printedName": "SanarKit.SKConsultation",
+                    "usr": "s:8SanarKit14SKConsultationV"
+                  }
+                ],
+                "usr": "s:7SwiftUI36UIViewControllerRepresentableContextV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SanarKit14SKConsultationV20makeUIViewController7contextSo012SFSafariViewF0C7SwiftUI0eF20RepresentableContextVyACG_tF",
+            "mangledName": "$s8SanarKit14SKConsultationV20makeUIViewController7contextSo012SFSafariViewF0C7SwiftUI0eF20RepresentableContextVyACG_tF",
+            "moduleName": "SanarKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateUIViewController",
+            "printedName": "updateUIViewController(_:context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SFSafariViewController",
+                "printedName": "SafariServices.SFSafariViewController",
+                "usr": "c:objc(cs)SFSafariViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewControllerRepresentableContext",
+                "printedName": "SwiftUI.UIViewControllerRepresentableContext<SanarKit.SKConsultation>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SKConsultation",
+                    "printedName": "SanarKit.SKConsultation",
+                    "usr": "s:8SanarKit14SKConsultationV"
+                  }
+                ],
+                "usr": "s:7SwiftUI36UIViewControllerRepresentableContextV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SanarKit14SKConsultationV22updateUIViewController_7contextySo012SFSafariViewF0C_7SwiftUI0eF20RepresentableContextVyACGtF",
+            "mangledName": "$s8SanarKit14SKConsultationV22updateUIViewController_7contextySo012SFSafariViewF0C_7SwiftUI0eF20RepresentableContextVyACGtF",
+            "moduleName": "SanarKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "makeCoordinator",
+            "printedName": "makeCoordinator()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Coordinator",
+                "printedName": "SanarKit.SKConsultation.Coordinator",
+                "usr": "s:8SanarKit14SKConsultationV11CoordinatorC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SanarKit14SKConsultationV15makeCoordinatorAC0E0CyF",
+            "mangledName": "$s8SanarKit14SKConsultationV15makeCoordinatorAC0E0CyF",
+            "moduleName": "SanarKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Coordinator",
+            "printedName": "Coordinator",
+            "children": [
+              {
+                "kind": "Function",
+                "name": "safariViewControllerDidFinish",
+                "printedName": "safariViewControllerDidFinish(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SFSafariViewController",
+                    "printedName": "SafariServices.SFSafariViewController",
+                    "usr": "c:objc(cs)SFSafariViewController"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:8SanarKit14SKConsultationV11CoordinatorC29safariViewControllerDidFinishyySo08SFSafarifG0CF",
+                "mangledName": "$s8SanarKit14SKConsultationV11CoordinatorC29safariViewControllerDidFinishyySo08SFSafarifG0CF",
+                "moduleName": "SanarKit",
+                "objc_name": "safariViewControllerDidFinish:",
+                "declAttributes": [
+                  "ObjC",
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Coordinator",
+                    "printedName": "SanarKit.SKConsultation.Coordinator",
+                    "usr": "s:8SanarKit14SKConsultationV11CoordinatorC"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:8SanarKit14SKConsultationV11CoordinatorCAEycfc",
+                "mangledName": "$s8SanarKit14SKConsultationV11CoordinatorCAEycfc",
+                "moduleName": "SanarKit",
+                "overriding": true,
+                "implicit": true,
+                "objc_name": "init",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC",
+                  "Override"
+                ],
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Class",
+            "usr": "s:8SanarKit14SKConsultationV11CoordinatorC",
+            "mangledName": "$s8SanarKit14SKConsultationV11CoordinatorC",
+            "moduleName": "SanarKit",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "superclassUsr": "c:objc(cs)NSObject",
+            "hasMissingDesignatedInitializers": true,
+            "superclassNames": [
+              "ObjectiveC.NSObject"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CVarArg",
+                "printedName": "CVarArg",
+                "usr": "s:s7CVarArgP",
+                "mangledName": "$ss7CVarArgP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "_KeyValueCodingAndObservingPublishing",
+                "printedName": "_KeyValueCodingAndObservingPublishing",
+                "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+                "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "_KeyValueCodingAndObserving",
+                "printedName": "_KeyValueCodingAndObserving",
+                "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+                "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomStringConvertible",
+                "printedName": "CustomStringConvertible",
+                "usr": "s:s23CustomStringConvertibleP",
+                "mangledName": "$ss23CustomStringConvertibleP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomDebugStringConvertible",
+                "printedName": "CustomDebugStringConvertible",
+                "usr": "s:s28CustomDebugStringConvertibleP",
+                "mangledName": "$ss28CustomDebugStringConvertibleP"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8SanarKit14SKConsultationV",
+        "mangledName": "$s8SanarKit14SKConsultationV",
+        "moduleName": "SanarKit",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UIViewControllerRepresentable",
+            "printedName": "UIViewControllerRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "UIViewControllerType",
+                "printedName": "UIViewControllerType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SFSafariViewController",
+                    "printedName": "SafariServices.SFSafariViewController",
+                    "usr": "c:objc(cs)SFSafariViewController"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Coordinator",
+                "printedName": "Coordinator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Coordinator",
+                    "printedName": "SanarKit.SKConsultation.Coordinator",
+                    "usr": "s:8SanarKit14SKConsultationV11CoordinatorC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI29UIViewControllerRepresentableP",
+            "mangledName": "$s7SwiftUI29UIViewControllerRepresentableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "SanarKit"
+      },
+      {
         "kind": "TypeDecl",
         "name": "ServiceView",
         "printedName": "ServiceView",
@@ -1321,6 +1742,179 @@
         "declKind": "Struct",
         "usr": "s:8SanarKit11ServiceViewV",
         "mangledName": "$s8SanarKit11ServiceViewV",
+        "moduleName": "SanarKit",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "SanarKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ConsultationView",
+        "printedName": "ConsultationView",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(consultationData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ConsultationView",
+                "printedName": "SanarKit.ConsultationView",
+                "usr": "s:8SanarKit16ConsultationViewV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8SanarKit16ConsultationViewV16consultationDataACSDySSypG_tcfc",
+            "mangledName": "$s8SanarKit16ConsultationViewV16consultationDataACSDySSypG_tcfc",
+            "moduleName": "SanarKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8SanarKit16ConsultationViewV4bodyQrvp",
+            "mangledName": "$s8SanarKit16ConsultationViewV4bodyQrvp",
+            "moduleName": "SanarKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8SanarKit16ConsultationViewV4bodyQrvg",
+                "mangledName": "$s8SanarKit16ConsultationViewV4bodyQrvg",
+                "moduleName": "SanarKit",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8SanarKit16ConsultationViewV",
+        "mangledName": "$s8SanarKit16ConsultationViewV",
         "moduleName": "SanarKit",
         "declAttributes": [
           "Preconcurrency",
@@ -2024,9 +2618,16 @@
     {
       "filePath": "\/Users\/maren\/Documents\/SanarSDK\/Framework\/SanarKit\/SanarKit\/ServiceView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1989,
+      "offset": 1845,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/SanarSDK\/Framework\/SanarKit\/SanarKit\/ConsultationView.swift",
+      "kind": "Dictionary",
+      "offset": 3133,
+      "length": 3,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/maren\/Documents\/SanarSDK\/Framework\/SanarKit\/SanarKit\/SKManager.swift",
@@ -2038,7 +2639,21 @@
     {
       "filePath": "\/Users\/maren\/Documents\/SanarSDK\/Framework\/SanarKit\/SanarKit\/BookingListView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2011,
+      "offset": 194,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/SanarSDK\/Framework\/SanarKit\/SanarKit\/BookingListView.swift",
+      "kind": "Dictionary",
+      "offset": 257,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/SanarSDK\/Framework\/SanarKit\/SanarKit\/BookingListView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2295,
       "length": 4,
       "value": "true"
     }
