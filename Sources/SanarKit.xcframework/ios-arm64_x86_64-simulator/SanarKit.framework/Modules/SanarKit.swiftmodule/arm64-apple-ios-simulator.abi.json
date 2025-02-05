@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "SanarKit",
+    "printedName": "SanarKit",
     "children": [
       {
         "kind": "Import",
@@ -114,6 +114,8 @@
             "mangledName": "$s8SanarKit9SKBookingV3url18onNavigationAction0E12DataReceived02isF6ActiveAC10Foundation3URLV_yAJcSgySScSg7SwiftUI7BindingVySbGtcfc",
             "moduleName": "SanarKit",
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
               "AccessControl"
             ],
             "init_kind": "Designated"
@@ -149,6 +151,7 @@
             "mangledName": "$s8SanarKit9SKBookingV10makeUIView7contextSo9WKWebViewC7SwiftUI0E20RepresentableContextVyACG_tF",
             "moduleName": "SanarKit",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -190,6 +193,7 @@
             "mangledName": "$s8SanarKit9SKBookingV12updateUIView_7contextySo9WKWebViewC_7SwiftUI0E20RepresentableContextVyACGtF",
             "moduleName": "SanarKit",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -212,6 +216,7 @@
             "mangledName": "$s8SanarKit9SKBookingV15makeCoordinatorAC0E0CyF",
             "moduleName": "SanarKit",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -270,6 +275,8 @@
                 "objc_name": "webView:decidePolicyForNavigationAction:decisionHandler:",
                 "declAttributes": [
                   "ObjC",
+                  "Preconcurrency",
+                  "Custom",
                   "AccessControl"
                 ],
                 "funcSelfKind": "NonMutating"
@@ -304,6 +311,8 @@
                 "objc_name": "userContentController:didReceiveScriptMessage:",
                 "declAttributes": [
                   "ObjC",
+                  "Preconcurrency",
+                  "Custom",
                   "AccessControl"
                 ],
                 "funcSelfKind": "NonMutating"
@@ -330,6 +339,8 @@
                 "declAttributes": [
                   "Dynamic",
                   "ObjC",
+                  "Preconcurrency",
+                  "Custom",
                   "Override"
                 ],
                 "init_kind": "Designated"
@@ -340,6 +351,8 @@
             "mangledName": "$s8SanarKit9SKBookingV11CoordinatorC",
             "moduleName": "SanarKit",
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
               "AccessControl",
               "ObjC"
             ],
@@ -349,6 +362,20 @@
               "ObjectiveC.NSObject"
             ],
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Equatable",
@@ -397,6 +424,13 @@
                 "printedName": "CustomDebugStringConvertible",
                 "usr": "s:s28CustomDebugStringConvertibleP",
                 "mangledName": "$ss28CustomDebugStringConvertibleP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
               }
             ]
           }
@@ -406,9 +440,25 @@
         "mangledName": "$s8SanarKit9SKBookingV",
         "moduleName": "SanarKit",
         "declAttributes": [
+          "Preconcurrency",
+          "Custom",
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "UIViewRepresentable",
@@ -465,6 +515,13 @@
             ],
             "usr": "s:7SwiftUI4ViewP",
             "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -578,6 +635,8 @@
             "mangledName": "$s8SanarKit10SKServicesV3url18onNavigationAction0E12DataReceived02isF6ActiveAC10Foundation3URLV_yAJcSgySScSg7SwiftUI7BindingVySbGtcfc",
             "moduleName": "SanarKit",
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
               "AccessControl"
             ],
             "init_kind": "Designated"
@@ -613,6 +672,7 @@
             "mangledName": "$s8SanarKit10SKServicesV10makeUIView7contextSo9WKWebViewC7SwiftUI0E20RepresentableContextVyACG_tF",
             "moduleName": "SanarKit",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -654,6 +714,7 @@
             "mangledName": "$s8SanarKit10SKServicesV12updateUIView_7contextySo9WKWebViewC_7SwiftUI0E20RepresentableContextVyACGtF",
             "moduleName": "SanarKit",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -676,6 +737,7 @@
             "mangledName": "$s8SanarKit10SKServicesV15makeCoordinatorAC0E0CyF",
             "moduleName": "SanarKit",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -734,6 +796,8 @@
                 "objc_name": "webView:decidePolicyForNavigationAction:decisionHandler:",
                 "declAttributes": [
                   "ObjC",
+                  "Preconcurrency",
+                  "Custom",
                   "AccessControl"
                 ],
                 "funcSelfKind": "NonMutating"
@@ -768,6 +832,8 @@
                 "objc_name": "userContentController:didReceiveScriptMessage:",
                 "declAttributes": [
                   "ObjC",
+                  "Preconcurrency",
+                  "Custom",
                   "AccessControl"
                 ],
                 "funcSelfKind": "NonMutating"
@@ -794,6 +860,8 @@
                 "declAttributes": [
                   "Dynamic",
                   "ObjC",
+                  "Preconcurrency",
+                  "Custom",
                   "Override"
                 ],
                 "init_kind": "Designated"
@@ -804,6 +872,8 @@
             "mangledName": "$s8SanarKit10SKServicesV11CoordinatorC",
             "moduleName": "SanarKit",
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
               "AccessControl",
               "ObjC"
             ],
@@ -813,6 +883,20 @@
               "ObjectiveC.NSObject"
             ],
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Equatable",
@@ -861,6 +945,13 @@
                 "printedName": "CustomDebugStringConvertible",
                 "usr": "s:s28CustomDebugStringConvertibleP",
                 "mangledName": "$ss28CustomDebugStringConvertibleP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
               }
             ]
           }
@@ -870,9 +961,25 @@
         "mangledName": "$s8SanarKit10SKServicesV",
         "moduleName": "SanarKit",
         "declAttributes": [
+          "Preconcurrency",
+          "Custom",
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "UIViewRepresentable",
@@ -929,6 +1036,13 @@
             ],
             "usr": "s:7SwiftUI4ViewP",
             "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -961,6 +1075,8 @@
             "mangledName": "$s8SanarKit11ServiceViewV18isNavigationActiveSbvp",
             "moduleName": "SanarKit",
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
               "ProjectedValueProperty",
               "AccessControl",
               "Custom"
@@ -1074,6 +1190,10 @@
             "mangledName": "$s8SanarKit11ServiceViewV19$isNavigationActive7SwiftUI7BindingVySbGvp",
             "moduleName": "SanarKit",
             "implicit": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -1135,6 +1255,8 @@
             "mangledName": "$s8SanarKit11ServiceViewV18isNavigationActiveAC7SwiftUI7BindingVySbG_tcfc",
             "moduleName": "SanarKit",
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
               "AccessControl"
             ],
             "init_kind": "Designated"
@@ -1163,6 +1285,7 @@
             "mangledName": "$s8SanarKit11ServiceViewV4bodyQrvp",
             "moduleName": "SanarKit",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -1200,9 +1323,25 @@
         "mangledName": "$s8SanarKit11ServiceViewV",
         "moduleName": "SanarKit",
         "declAttributes": [
+          "Preconcurrency",
+          "Custom",
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "View",
@@ -1231,6 +1370,13 @@
             ],
             "usr": "s:7SwiftUI4ViewP",
             "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -1519,6 +1665,22 @@
         "moduleName": "SanarKit",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -1550,6 +1712,8 @@
             "mangledName": "$s8SanarKit15BookingListViewV18isNavigationActiveSbvp",
             "moduleName": "SanarKit",
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
               "ProjectedValueProperty",
               "AccessControl",
               "Custom"
@@ -1663,6 +1827,10 @@
             "mangledName": "$s8SanarKit15BookingListViewV19$isNavigationActive7SwiftUI7BindingVySbGvp",
             "moduleName": "SanarKit",
             "implicit": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -1724,6 +1892,8 @@
             "mangledName": "$s8SanarKit15BookingListViewV18isNavigationActiveAC7SwiftUI7BindingVySbG_tcfc",
             "moduleName": "SanarKit",
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
               "AccessControl"
             ],
             "init_kind": "Designated"
@@ -1752,6 +1922,7 @@
             "mangledName": "$s8SanarKit15BookingListViewV4bodyQrvp",
             "moduleName": "SanarKit",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -1789,9 +1960,25 @@
         "mangledName": "$s8SanarKit15BookingListViewV",
         "moduleName": "SanarKit",
         "declAttributes": [
+          "Preconcurrency",
+          "Custom",
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "View",
@@ -1820,6 +2007,13 @@
             ],
             "usr": "s:7SwiftUI4ViewP",
             "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       }
@@ -1828,23 +2022,9 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/maren\/Documents\/SanarSDK\/Framework\/SanarKit\/SanarKit\/SKBooking.swift",
-      "kind": "StringLiteral",
-      "offset": 1135,
-      "length": 11,
-      "value": "\"SanarKit.Coordinator\""
-    },
-    {
-      "filePath": "\/Users\/maren\/Documents\/SanarSDK\/Framework\/SanarKit\/SanarKit\/SKServices.swift",
-      "kind": "StringLiteral",
-      "offset": 1228,
-      "length": 11,
-      "value": "\"SanarKit.Coordinator\""
-    },
-    {
       "filePath": "\/Users\/maren\/Documents\/SanarSDK\/Framework\/SanarKit\/SanarKit\/ServiceView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1925,
+      "offset": 1989,
       "length": 4,
       "value": "true"
     },

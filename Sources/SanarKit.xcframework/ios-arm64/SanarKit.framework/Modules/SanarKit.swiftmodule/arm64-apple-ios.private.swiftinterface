@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target arm64-apple-ios17.5 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name SanarKit
 import Foundation
 @_exported import SanarKit
@@ -9,45 +9,45 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public struct SKBooking : SwiftUI.UIViewRepresentable {
-  public init(url: Foundation.URL, onNavigationAction: ((Foundation.URL) -> Swift.Void)? = nil, onDataReceived: ((Swift.String) -> Swift.Void)? = nil, isNavigationActive: SwiftUI.Binding<Swift.Bool>)
-  @_Concurrency.MainActor(unsafe) public func makeUIView(context: SanarKit.SKBooking.Context) -> WebKit.WKWebView
-  @_Concurrency.MainActor(unsafe) public func updateUIView(_ uiView: WebKit.WKWebView, context: SanarKit.SKBooking.Context)
-  @_Concurrency.MainActor(unsafe) public func makeCoordinator() -> SanarKit.SKBooking.Coordinator
-  @objc @_hasMissingDesignatedInitializers public class Coordinator : ObjectiveC.NSObject, WebKit.WKNavigationDelegate, WebKit.WKScriptMessageHandler {
-    @objc public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
-    @objc public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
+@_Concurrency.MainActor @preconcurrency public struct SKBooking : SwiftUI.UIViewRepresentable {
+  @_Concurrency.MainActor @preconcurrency public init(url: Foundation.URL, onNavigationAction: ((Foundation.URL) -> Swift.Void)? = nil, onDataReceived: ((Swift.String) -> Swift.Void)? = nil, isNavigationActive: SwiftUICore.Binding<Swift.Bool>)
+  @_Concurrency.MainActor @preconcurrency public func makeUIView(context: SanarKit.SKBooking.Context) -> WebKit.WKWebView
+  @_Concurrency.MainActor @preconcurrency public func updateUIView(_ uiView: WebKit.WKWebView, context: SanarKit.SKBooking.Context)
+  @_Concurrency.MainActor @preconcurrency public func makeCoordinator() -> SanarKit.SKBooking.Coordinator
+  @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class Coordinator : ObjectiveC.NSObject, WebKit.WKNavigationDelegate, WebKit.WKScriptMessageHandler {
+    @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
+    @_Concurrency.MainActor @preconcurrency @objc public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
     @objc deinit
   }
   public typealias Body = Swift.Never
   public typealias UIViewType = WebKit.WKWebView
 }
-public struct SKServices : SwiftUI.UIViewRepresentable {
-  public init(url: Foundation.URL, onNavigationAction: ((Foundation.URL) -> Swift.Void)? = nil, onDataReceived: ((Swift.String) -> Swift.Void)? = nil, isNavigationActive: SwiftUI.Binding<Swift.Bool>)
-  @_Concurrency.MainActor(unsafe) public func makeUIView(context: SanarKit.SKServices.Context) -> WebKit.WKWebView
-  @_Concurrency.MainActor(unsafe) public func updateUIView(_ uiView: WebKit.WKWebView, context: SanarKit.SKServices.Context)
-  @_Concurrency.MainActor(unsafe) public func makeCoordinator() -> SanarKit.SKServices.Coordinator
-  @objc @_hasMissingDesignatedInitializers public class Coordinator : ObjectiveC.NSObject, WebKit.WKNavigationDelegate, WebKit.WKScriptMessageHandler {
-    @objc public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
-    @objc public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
+@_Concurrency.MainActor @preconcurrency public struct SKServices : SwiftUI.UIViewRepresentable {
+  @_Concurrency.MainActor @preconcurrency public init(url: Foundation.URL, onNavigationAction: ((Foundation.URL) -> Swift.Void)? = nil, onDataReceived: ((Swift.String) -> Swift.Void)? = nil, isNavigationActive: SwiftUICore.Binding<Swift.Bool>)
+  @_Concurrency.MainActor @preconcurrency public func makeUIView(context: SanarKit.SKServices.Context) -> WebKit.WKWebView
+  @_Concurrency.MainActor @preconcurrency public func updateUIView(_ uiView: WebKit.WKWebView, context: SanarKit.SKServices.Context)
+  @_Concurrency.MainActor @preconcurrency public func makeCoordinator() -> SanarKit.SKServices.Coordinator
+  @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class Coordinator : ObjectiveC.NSObject, WebKit.WKNavigationDelegate, WebKit.WKScriptMessageHandler {
+    @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
+    @_Concurrency.MainActor @preconcurrency @objc public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
     @objc deinit
   }
   public typealias Body = Swift.Never
   public typealias UIViewType = WebKit.WKWebView
 }
-public struct ServiceView : SwiftUI.View {
-  @SwiftUI.Binding @_projectedValueProperty($isNavigationActive) public var isNavigationActive: Swift.Bool {
+@_Concurrency.MainActor @preconcurrency public struct ServiceView : SwiftUICore.View {
+  @SwiftUICore.Binding @_projectedValueProperty($isNavigationActive) @_Concurrency.MainActor @preconcurrency public var isNavigationActive: Swift.Bool {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     nonmutating set
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     nonmutating _modify
   }
-  public var $isNavigationActive: SwiftUI.Binding<Swift.Bool> {
+  @_Concurrency.MainActor @preconcurrency public var $isNavigationActive: SwiftUICore.Binding<Swift.Bool> {
     get
   }
-  public init(isNavigationActive: SwiftUI.Binding<Swift.Bool>)
-  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+  @_Concurrency.MainActor @preconcurrency public init(isNavigationActive: SwiftUICore.Binding<Swift.Bool>)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
   public typealias Body = @_opaqueReturnTypeOf("$s8SanarKit11ServiceViewV4bodyQrvp", 0) __
@@ -56,26 +56,30 @@ public struct ServiceView : SwiftUI.View {
 public struct SKManager {
   public static var clientAuth: [Swift.String : Any]?
   public init()
-  #if compiler(>=5.3) && $AsyncAwait
   public static func connect(cid: Swift.String, bundleId: Swift.String, clientInfo: [Swift.String : Any], lang: Swift.String = "en") async throws -> Swift.String
-  #endif
   public static func disconnect()
 }
-public struct BookingListView : SwiftUI.View {
-  @SwiftUI.Binding @_projectedValueProperty($isNavigationActive) public var isNavigationActive: Swift.Bool {
+@_Concurrency.MainActor @preconcurrency public struct BookingListView : SwiftUICore.View {
+  @SwiftUICore.Binding @_projectedValueProperty($isNavigationActive) @_Concurrency.MainActor @preconcurrency public var isNavigationActive: Swift.Bool {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     nonmutating set
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     nonmutating _modify
   }
-  public var $isNavigationActive: SwiftUI.Binding<Swift.Bool> {
+  @_Concurrency.MainActor @preconcurrency public var $isNavigationActive: SwiftUICore.Binding<Swift.Bool> {
     get
   }
-  public init(isNavigationActive: SwiftUI.Binding<Swift.Bool>)
-  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+  @_Concurrency.MainActor @preconcurrency public init(isNavigationActive: SwiftUICore.Binding<Swift.Bool>)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
   public typealias Body = @_opaqueReturnTypeOf("$s8SanarKit15BookingListViewV4bodyQrvp", 0) __
 }
 
+extension SanarKit.SKBooking : Swift.Sendable {}
+extension SanarKit.SKBooking.Coordinator : Swift.Sendable {}
+extension SanarKit.SKServices : Swift.Sendable {}
+extension SanarKit.SKServices.Coordinator : Swift.Sendable {}
+extension SanarKit.ServiceView : Swift.Sendable {}
+extension SanarKit.BookingListView : Swift.Sendable {}
