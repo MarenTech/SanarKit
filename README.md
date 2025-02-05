@@ -82,8 +82,8 @@ Example :
 
 ```swift
 let clientData: [String: Any] = [
-    "first_name": "Venu",
-    "last_name": "Test",
+    "first_name": "John",
+    "last_name": "Doe",
     "dob": "1994-08-13",
     "gender": "M",
     "nationality": "Saudi Arabia",
@@ -112,7 +112,7 @@ SKManager.disconnect()
 Best Practices: It's good practice to call disconnect when your app is about to be suspended, or when the user logs out or navigates away from sections of the app that require a connection to the SanarKit service.
 
 # ServiceView
-The SanarKit SDK includes a ServiceView that allows your application to navigate directly to the SanarUI flow. This flow handles the complete booking process within the SDK, making it easy to integrate without requiring extensive additional development.
+The SanarKit SDK includes a ServiceView that allows your application to navigate directly to the Sanar Booking flow. This flow handles the complete booking process within the SDK, making it easy to integrate without requiring extensive additional development including UI interface.
 
 ```swift
 SanarKit.ServiceView(isNavigationActive: $isService)
