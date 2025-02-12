@@ -2625,7 +2625,7 @@
     {
       "filePath": "\/Users\/maren\/Documents\/SanarSDK\/Framework\/SanarKit\/SanarKit\/ConsultationView.swift",
       "kind": "Dictionary",
-      "offset": 3524,
+      "offset": 4692,
       "length": 3,
       "value": "[]"
     },
@@ -2653,7 +2653,7 @@
     {
       "filePath": "\/Users\/maren\/Documents\/SanarSDK\/Framework\/SanarKit\/SanarKit\/BookingListView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2295,
+      "offset": 2120,
       "length": 4,
       "value": "true"
     }
