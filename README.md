@@ -138,14 +138,19 @@ import SanarKit
 
 struct ContentView: View {
     @State private var isService = false
+    
     var body: some View {
-        NavigationLink(destination:
-                  SanarKit.ServiceView(isNavigationActive: $isService),
-                  isActive: $isService
-                 ) {
-                       Text("Book Service")
-                           .foregroundColor(.blue)
-                   }
+        NavigationStack {
+            Button {
+                isService = true
+            } label: {
+                Text("Book Service")
+                    .foregroundColor(.blue)
+            }
+            .navigationDestination(isPresented: $isService) {
+                SanarKit.ServiceView(isNavigationActive: $isService)
+            }
+        }
     }
 }
 ```
@@ -182,13 +187,17 @@ struct ContentView: View {
     @State private var isBooking = false
 
     var body: some View {
-        NavigationLink(destination:       
-               SanarKit.BookingListView(isNavigationActive: $isBooking),
-                  isActive: $isBooking
-               ) {
-                     Text("Appointments")
-                        .foregroundColor(.blue)
-                 }
+        NavigationStack {
+            Button {
+                isBooking = true
+            } label: {
+                Text("Appointments")
+                    .foregroundColor(.blue)
+            }
+            .navigationDestination(isPresented: $isBooking) {
+                SanarKit.BookingListView(isNavigationActive: $isBooking)
+            }
+        }
     }
 }
 ```
@@ -196,6 +205,54 @@ struct ContentView: View {
 ## How It Works
 - Navigation: The NavigationLink uses the isBooking binding to determine whether to navigate to BookingListView. When isBooking becomes true, the app navigates to the SanarKit.BookingListView.
 - Post-Booking Flow: The BookingListView then manages the entire post-booking flow, including displaying the appointment list, detailed information about each appointment, and providing a chat feature to communicate with the provider.
+
+# ConsultationView
+SanarKit provides the `ConsultationView` module to deeplink the app flow to the Consultation Page 
+
+### Description
+The ConsultationView module to deeplink the user directly to Consultation page when there is any callback notification from sanar and the app is in the background or killed state. Once the app is brought to the foreground by the callback notification, invoke this module by passing the required parameters to navigate to the Consultation page.
+
+### Usage
+
+```swift
+SanarKit.ConsultationView(
+    consultationData: ["dId": "doctor_id", "aId": "appointment_id"]
+)
+```
+
+### Parameters
+	•	dId (String): The unique identifier of the doctor.
+	•	aId (String): The appointment ID associated with the consultation.
+
+### Usage Example
+
+```swift
+import SwiftUI
+import SanarKit
+
+struct ContentView: View {
+    @State private var isConsultation = false
+    
+    var body: some View {
+        NavigationStack {
+            Button {
+                isConsultation = true
+            } label: {
+                Text("Start Consultation")
+                    .foregroundColor(.blue)
+            }
+            .navigationDestination(isPresented: $isConsultation) {
+                SanarKit.ConsultationView(
+                    consultationData: ["dId": "doctor_id", "aId": "appointment_id"]
+                )
+            }
+        }
+    }
+}
+```
+
+## How It Works
+- The ConsultationView manages the doctor consultation process using the provided doctor and appointment IDs
 
 For more details and implementation examples, please check the example repository [Here](https://github.com/MarenTech/ExampleSanarKitSwift).
 
