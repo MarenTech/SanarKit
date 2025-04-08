@@ -8,6 +8,7 @@ SanarKit - is a Swift framework designed to seamlessly integrate Sanar services 
 - ### [disconnect](https://github.com/MarenTech/SanarKit?tab=readme-ov-file#disconnect-1)
 - ### [ServiceView](https://github.com/MarenTech/SanarKit?tab=readme-ov-file#serviceview-1)
 - ### [BookingListView](https://github.com/MarenTech/SanarKit?tab=readme-ov-file#bookinglistview-1)
+- ### [ConsultationView](https://github.com/MarenTech/SanarKit?tab=readme-ov-file#consultationview-1)
 
 ## Installation Steps
 
