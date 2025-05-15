@@ -947,6 +947,65 @@
                   "Override"
                 ],
                 "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "webView",
+                "printedName": "webView(_:createWebViewWith:for:windowFeatures:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "WebKit.WKWebView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WKWebView",
+                        "printedName": "WebKit.WKWebView",
+                        "usr": "c:objc(cs)WKWebView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKWebView",
+                    "printedName": "WebKit.WKWebView",
+                    "usr": "c:objc(cs)WKWebView"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKWebViewConfiguration",
+                    "printedName": "WebKit.WKWebViewConfiguration",
+                    "usr": "c:objc(cs)WKWebViewConfiguration"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKNavigationAction",
+                    "printedName": "WebKit.WKNavigationAction",
+                    "usr": "c:objc(cs)WKNavigationAction"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKWindowFeatures",
+                    "printedName": "WebKit.WKWindowFeatures",
+                    "usr": "c:objc(cs)WKWindowFeatures"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:8SanarKit9SKBookingV11CoordinatorC7webView_09createWebF4With3for14windowFeaturesSo05WKWebF0CSgAK_So0mF13ConfigurationCSo18WKNavigationActionCSo08WKWindowL0CtF",
+                "mangledName": "$s8SanarKit9SKBookingV11CoordinatorC7webView_09createWebF4With3for14windowFeaturesSo05WKWebF0CSgAK_So0mF13ConfigurationCSo18WKNavigationActionCSo08WKWindowL0CtF",
+                "moduleName": "SanarKit",
+                "objc_name": "webView:createWebViewWithConfiguration:forNavigationAction:windowFeatures:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC",
+                  "Preconcurrency",
+                  "Custom",
+                  "AccessControl"
+                ],
+                "isFromExtension": true,
+                "funcSelfKind": "NonMutating"
               }
             ],
             "declKind": "Class",
@@ -1468,6 +1527,65 @@
                   "Override"
                 ],
                 "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "webView",
+                "printedName": "webView(_:createWebViewWith:for:windowFeatures:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "WebKit.WKWebView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WKWebView",
+                        "printedName": "WebKit.WKWebView",
+                        "usr": "c:objc(cs)WKWebView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKWebView",
+                    "printedName": "WebKit.WKWebView",
+                    "usr": "c:objc(cs)WKWebView"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKWebViewConfiguration",
+                    "printedName": "WebKit.WKWebViewConfiguration",
+                    "usr": "c:objc(cs)WKWebViewConfiguration"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKNavigationAction",
+                    "printedName": "WebKit.WKNavigationAction",
+                    "usr": "c:objc(cs)WKNavigationAction"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKWindowFeatures",
+                    "printedName": "WebKit.WKWindowFeatures",
+                    "usr": "c:objc(cs)WKWindowFeatures"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:8SanarKit10SKServicesV11CoordinatorC7webView_09createWebF4With3for14windowFeaturesSo05WKWebF0CSgAK_So0mF13ConfigurationCSo18WKNavigationActionCSo08WKWindowL0CtF",
+                "mangledName": "$s8SanarKit10SKServicesV11CoordinatorC7webView_09createWebF4With3for14windowFeaturesSo05WKWebF0CSgAK_So0mF13ConfigurationCSo18WKNavigationActionCSo08WKWindowL0CtF",
+                "moduleName": "SanarKit",
+                "objc_name": "webView:createWebViewWithConfiguration:forNavigationAction:windowFeatures:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC",
+                  "Preconcurrency",
+                  "Custom",
+                  "AccessControl"
+                ],
+                "isFromExtension": true,
+                "funcSelfKind": "NonMutating"
               }
             ],
             "declKind": "Class",
