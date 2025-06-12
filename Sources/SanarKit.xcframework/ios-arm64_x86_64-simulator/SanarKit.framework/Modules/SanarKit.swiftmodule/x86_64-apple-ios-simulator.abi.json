@@ -1776,10 +1776,13 @@
       },
       {
         "kind": "Import",
-        "name": "SafariServices",
-        "printedName": "SafariServices",
+        "name": "WebKit",
+        "printedName": "WebKit",
         "declKind": "Import",
-        "moduleName": "SanarKit"
+        "moduleName": "SanarKit",
+        "declAttributes": [
+          "Preconcurrency"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -1789,7 +1792,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(url:)",
+            "printedName": "init(url:onNavigationAction:onDataReceived:isNavigationActive:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1802,11 +1805,79 @@
                 "name": "URL",
                 "printedName": "Foundation.URL",
                 "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Foundation.URL) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.URL) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.String) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Binding",
+                "printedName": "SwiftUI.Binding<Swift.Bool>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:7SwiftUI7BindingV"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:8SanarKit14SKConsultationV3urlAC10Foundation3URLV_tcfc",
-            "mangledName": "$s8SanarKit14SKConsultationV3urlAC10Foundation3URLV_tcfc",
+            "usr": "s:8SanarKit14SKConsultationV3url18onNavigationAction0E12DataReceived02isF6ActiveAC10Foundation3URLV_yAJcSgySScSg7SwiftUI7BindingVySbGtcfc",
+            "mangledName": "$s8SanarKit14SKConsultationV3url18onNavigationAction0E12DataReceived02isF6ActiveAC10Foundation3URLV_yAJcSgySScSg7SwiftUI7BindingVySbGtcfc",
             "moduleName": "SanarKit",
             "declAttributes": [
               "Preconcurrency",
@@ -1817,19 +1888,19 @@
           },
           {
             "kind": "Function",
-            "name": "makeUIViewController",
-            "printedName": "makeUIViewController(context:)",
+            "name": "makeUIView",
+            "printedName": "makeUIView(context:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "SFSafariViewController",
-                "printedName": "SafariServices.SFSafariViewController",
-                "usr": "c:objc(cs)SFSafariViewController"
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
               },
               {
                 "kind": "TypeNominal",
-                "name": "UIViewControllerRepresentableContext",
-                "printedName": "SwiftUI.UIViewControllerRepresentableContext<SanarKit.SKConsultation>",
+                "name": "UIViewRepresentableContext",
+                "printedName": "SwiftUI.UIViewRepresentableContext<SanarKit.SKConsultation>",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -1838,12 +1909,12 @@
                     "usr": "s:8SanarKit14SKConsultationV"
                   }
                 ],
-                "usr": "s:7SwiftUI36UIViewControllerRepresentableContextV"
+                "usr": "s:7SwiftUI26UIViewRepresentableContextV"
               }
             ],
             "declKind": "Func",
-            "usr": "s:8SanarKit14SKConsultationV20makeUIViewController7contextSo012SFSafariViewF0C7SwiftUI0eF20RepresentableContextVyACG_tF",
-            "mangledName": "$s8SanarKit14SKConsultationV20makeUIViewController7contextSo012SFSafariViewF0C7SwiftUI0eF20RepresentableContextVyACG_tF",
+            "usr": "s:8SanarKit14SKConsultationV10makeUIView7contextSo9WKWebViewC7SwiftUI0E20RepresentableContextVyACG_tF",
+            "mangledName": "$s8SanarKit14SKConsultationV10makeUIView7contextSo9WKWebViewC7SwiftUI0E20RepresentableContextVyACG_tF",
             "moduleName": "SanarKit",
             "declAttributes": [
               "Preconcurrency",
@@ -1854,8 +1925,8 @@
           },
           {
             "kind": "Function",
-            "name": "updateUIViewController",
-            "printedName": "updateUIViewController(_:context:)",
+            "name": "updateUIView",
+            "printedName": "updateUIView(_:context:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1864,14 +1935,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "SFSafariViewController",
-                "printedName": "SafariServices.SFSafariViewController",
-                "usr": "c:objc(cs)SFSafariViewController"
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
               },
               {
                 "kind": "TypeNominal",
-                "name": "UIViewControllerRepresentableContext",
-                "printedName": "SwiftUI.UIViewControllerRepresentableContext<SanarKit.SKConsultation>",
+                "name": "UIViewRepresentableContext",
+                "printedName": "SwiftUI.UIViewRepresentableContext<SanarKit.SKConsultation>",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -1880,12 +1951,12 @@
                     "usr": "s:8SanarKit14SKConsultationV"
                   }
                 ],
-                "usr": "s:7SwiftUI36UIViewControllerRepresentableContextV"
+                "usr": "s:7SwiftUI26UIViewRepresentableContextV"
               }
             ],
             "declKind": "Func",
-            "usr": "s:8SanarKit14SKConsultationV22updateUIViewController_7contextySo012SFSafariViewF0C_7SwiftUI0eF20RepresentableContextVyACGtF",
-            "mangledName": "$s8SanarKit14SKConsultationV22updateUIViewController_7contextySo012SFSafariViewF0C_7SwiftUI0eF20RepresentableContextVyACGtF",
+            "usr": "s:8SanarKit14SKConsultationV12updateUIView_7contextySo9WKWebViewC_7SwiftUI0E20RepresentableContextVyACGtF",
+            "mangledName": "$s8SanarKit14SKConsultationV12updateUIView_7contextySo9WKWebViewC_7SwiftUI0E20RepresentableContextVyACGtF",
             "moduleName": "SanarKit",
             "declAttributes": [
               "Preconcurrency",
@@ -1924,8 +1995,8 @@
             "children": [
               {
                 "kind": "Function",
-                "name": "safariViewControllerDidFinish",
-                "printedName": "safariViewControllerDidFinish(_:)",
+                "name": "webView",
+                "printedName": "webView(_:decidePolicyFor:decisionHandler:)",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -1934,18 +2005,80 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "SFSafariViewController",
-                    "printedName": "SafariServices.SFSafariViewController",
-                    "usr": "c:objc(cs)SFSafariViewController"
+                    "name": "WKWebView",
+                    "printedName": "WebKit.WKWebView",
+                    "usr": "c:objc(cs)WKWebView"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKNavigationAction",
+                    "printedName": "WebKit.WKNavigationAction",
+                    "usr": "c:objc(cs)WKNavigationAction"
+                  },
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(WebKit.WKNavigationActionPolicy) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WKNavigationActionPolicy",
+                        "printedName": "WebKit.WKNavigationActionPolicy",
+                        "usr": "c:@E@WKNavigationActionPolicy"
+                      }
+                    ]
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:8SanarKit14SKConsultationV11CoordinatorC29safariViewControllerDidFinishyySo08SFSafarifG0CF",
-                "mangledName": "$s8SanarKit14SKConsultationV11CoordinatorC29safariViewControllerDidFinishyySo08SFSafarifG0CF",
+                "usr": "s:8SanarKit14SKConsultationV11CoordinatorC7webView_15decidePolicyFor15decisionHandlerySo05WKWebF0C_So18WKNavigationActionCySo0mnH0VctF",
+                "mangledName": "$s8SanarKit14SKConsultationV11CoordinatorC7webView_15decidePolicyFor15decisionHandlerySo05WKWebF0C_So18WKNavigationActionCySo0mnH0VctF",
                 "moduleName": "SanarKit",
-                "objc_name": "safariViewControllerDidFinish:",
+                "objc_name": "webView:decidePolicyForNavigationAction:decisionHandler:",
                 "declAttributes": [
                   "ObjC",
+                  "Preconcurrency",
+                  "Custom",
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "userContentController",
+                "printedName": "userContentController(_:didReceive:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKUserContentController",
+                    "printedName": "WebKit.WKUserContentController",
+                    "usr": "c:objc(cs)WKUserContentController"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKScriptMessage",
+                    "printedName": "WebKit.WKScriptMessage",
+                    "usr": "c:objc(cs)WKScriptMessage"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:8SanarKit14SKConsultationV11CoordinatorC21userContentController_10didReceiveySo06WKUserfG0C_So15WKScriptMessageCtF",
+                "mangledName": "$s8SanarKit14SKConsultationV11CoordinatorC21userContentController_10didReceiveySo06WKUserfG0C_So15WKScriptMessageCtF",
+                "moduleName": "SanarKit",
+                "objc_name": "userContentController:didReceiveScriptMessage:",
+                "declAttributes": [
+                  "ObjC",
+                  "Preconcurrency",
+                  "Custom",
                   "AccessControl"
                 ],
                 "funcSelfKind": "NonMutating"
@@ -1972,9 +2105,70 @@
                 "declAttributes": [
                   "Dynamic",
                   "ObjC",
+                  "Preconcurrency",
+                  "Custom",
                   "Override"
                 ],
                 "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "webView",
+                "printedName": "webView(_:createWebViewWith:for:windowFeatures:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "WebKit.WKWebView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WKWebView",
+                        "printedName": "WebKit.WKWebView",
+                        "usr": "c:objc(cs)WKWebView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKWebView",
+                    "printedName": "WebKit.WKWebView",
+                    "usr": "c:objc(cs)WKWebView"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKWebViewConfiguration",
+                    "printedName": "WebKit.WKWebViewConfiguration",
+                    "usr": "c:objc(cs)WKWebViewConfiguration"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKNavigationAction",
+                    "printedName": "WebKit.WKNavigationAction",
+                    "usr": "c:objc(cs)WKNavigationAction"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKWindowFeatures",
+                    "printedName": "WebKit.WKWindowFeatures",
+                    "usr": "c:objc(cs)WKWindowFeatures"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:8SanarKit14SKConsultationV11CoordinatorC7webView_09createWebF4With3for14windowFeaturesSo05WKWebF0CSgAK_So0mF13ConfigurationCSo18WKNavigationActionCSo08WKWindowL0CtF",
+                "mangledName": "$s8SanarKit14SKConsultationV11CoordinatorC7webView_09createWebF4With3for14windowFeaturesSo05WKWebF0CSgAK_So0mF13ConfigurationCSo18WKNavigationActionCSo08WKWindowL0CtF",
+                "moduleName": "SanarKit",
+                "objc_name": "webView:createWebViewWithConfiguration:forNavigationAction:windowFeatures:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC",
+                  "Preconcurrency",
+                  "Custom",
+                  "AccessControl"
+                ],
+                "isFromExtension": true,
+                "funcSelfKind": "NonMutating"
               }
             ],
             "declKind": "Class",
@@ -1982,6 +2176,8 @@
             "mangledName": "$s8SanarKit14SKConsultationV11CoordinatorC",
             "moduleName": "SanarKit",
             "declAttributes": [
+              "Preconcurrency",
+              "Custom",
               "AccessControl",
               "ObjC"
             ],
@@ -2053,6 +2249,13 @@
                 "printedName": "CustomDebugStringConvertible",
                 "usr": "s:s28CustomDebugStringConvertibleP",
                 "mangledName": "$ss28CustomDebugStringConvertibleP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
               }
             ]
           }
@@ -2083,19 +2286,19 @@
           },
           {
             "kind": "Conformance",
-            "name": "UIViewControllerRepresentable",
-            "printedName": "UIViewControllerRepresentable",
+            "name": "UIViewRepresentable",
+            "printedName": "UIViewRepresentable",
             "children": [
               {
                 "kind": "TypeWitness",
-                "name": "UIViewControllerType",
-                "printedName": "UIViewControllerType",
+                "name": "UIViewType",
+                "printedName": "UIViewType",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "SFSafariViewController",
-                    "printedName": "SafariServices.SFSafariViewController",
-                    "usr": "c:objc(cs)SFSafariViewController"
+                    "name": "WKWebView",
+                    "printedName": "WebKit.WKWebView",
+                    "usr": "c:objc(cs)WKWebView"
                   }
                 ]
               },
@@ -2113,8 +2316,8 @@
                 ]
               }
             ],
-            "usr": "s:7SwiftUI29UIViewControllerRepresentableP",
-            "mangledName": "$s7SwiftUI29UIViewControllerRepresentableP"
+            "usr": "s:7SwiftUI19UIViewRepresentableP",
+            "mangledName": "$s7SwiftUI19UIViewRepresentableP"
           },
           {
             "kind": "Conformance",
@@ -2494,15 +2697,195 @@
         "printedName": "ConsultationView",
         "children": [
           {
+            "kind": "Var",
+            "name": "isNavigationActive",
+            "printedName": "isNavigationActive",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8SanarKit16ConsultationViewV18isNavigationActiveSbvp",
+            "mangledName": "$s8SanarKit16ConsultationViewV18isNavigationActiveSbvp",
+            "moduleName": "SanarKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "ProjectedValueProperty",
+              "AccessControl",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8SanarKit16ConsultationViewV18isNavigationActiveSbvg",
+                "mangledName": "$s8SanarKit16ConsultationViewV18isNavigationActiveSbvg",
+                "moduleName": "SanarKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8SanarKit16ConsultationViewV18isNavigationActiveSbvs",
+                "mangledName": "$s8SanarKit16ConsultationViewV18isNavigationActiveSbvs",
+                "moduleName": "SanarKit",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8SanarKit16ConsultationViewV18isNavigationActiveSbvM",
+                "mangledName": "$s8SanarKit16ConsultationViewV18isNavigationActiveSbvM",
+                "moduleName": "SanarKit",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$isNavigationActive",
+            "printedName": "$isNavigationActive",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Binding",
+                "printedName": "SwiftUI.Binding<Swift.Bool>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:7SwiftUI7BindingV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8SanarKit16ConsultationViewV19$isNavigationActive7SwiftUI7BindingVySbGvp",
+            "mangledName": "$s8SanarKit16ConsultationViewV19$isNavigationActive7SwiftUI7BindingVySbGvp",
+            "moduleName": "SanarKit",
+            "implicit": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Binding",
+                    "printedName": "SwiftUI.Binding<Swift.Bool>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:7SwiftUI7BindingV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8SanarKit16ConsultationViewV19$isNavigationActive7SwiftUI7BindingVySbGvg",
+                "mangledName": "$s8SanarKit16ConsultationViewV19$isNavigationActive7SwiftUI7BindingVySbGvg",
+                "moduleName": "SanarKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(consultationData:)",
+            "printedName": "init(isNavigationActive:consultationData:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "ConsultationView",
                 "printedName": "SanarKit.ConsultationView",
                 "usr": "s:8SanarKit16ConsultationViewV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Binding",
+                "printedName": "SwiftUI.Binding<Swift.Bool>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:7SwiftUI7BindingV"
               },
               {
                 "kind": "TypeNominal",
@@ -2525,8 +2908,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:8SanarKit16ConsultationViewV16consultationDataACSDySSypG_tcfc",
-            "mangledName": "$s8SanarKit16ConsultationViewV16consultationDataACSDySSypG_tcfc",
+            "usr": "s:8SanarKit16ConsultationViewV18isNavigationActive16consultationDataAC7SwiftUI7BindingVySbG_SDySSypGtcfc",
+            "mangledName": "$s8SanarKit16ConsultationViewV18isNavigationActive16consultationDataAC7SwiftUI7BindingVySbG_SDySSypGtcfc",
             "moduleName": "SanarKit",
             "declAttributes": [
               "Preconcurrency",
@@ -3630,65 +4013,72 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/maren\/Documents\/SanarSDK\/Framework\/SanarKit\/SanarKit\/ServiceView.swift",
+      "filePath": "\/Users\/maren\/Documents\/sdk\/sanarKitNative\/Framework\/SanarKit\/SanarKit\/ServiceView.swift",
       "kind": "BooleanLiteral",
       "offset": 1845,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/maren\/Documents\/SanarSDK\/Framework\/SanarKit\/SanarKit\/ConsultationView.swift",
+      "filePath": "\/Users\/maren\/Documents\/sdk\/sanarKitNative\/Framework\/SanarKit\/SanarKit\/ConsultationView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3465,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/sdk\/sanarKitNative\/Framework\/SanarKit\/SanarKit\/ConsultationView.swift",
       "kind": "Dictionary",
-      "offset": 4777,
+      "offset": 3490,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/maren\/Documents\/SanarSDK\/Framework\/SanarKit\/SanarKit\/SKManager.swift",
+      "filePath": "\/Users\/maren\/Documents\/sdk\/sanarKitNative\/Framework\/SanarKit\/SanarKit\/SKManager.swift",
       "kind": "StringLiteral",
       "offset": 311,
       "length": 4,
       "value": "\"en\""
     },
     {
-      "filePath": "\/Users\/maren\/Documents\/SanarSDK\/Framework\/SanarKit\/SanarKit\/BookingListView.swift",
+      "filePath": "\/Users\/maren\/Documents\/sdk\/sanarKitNative\/Framework\/SanarKit\/SanarKit\/BookingListView.swift",
       "kind": "BooleanLiteral",
       "offset": 194,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/maren\/Documents\/SanarSDK\/Framework\/SanarKit\/SanarKit\/BookingListView.swift",
+      "filePath": "\/Users\/maren\/Documents\/sdk\/sanarKitNative\/Framework\/SanarKit\/SanarKit\/BookingListView.swift",
       "kind": "Dictionary",
       "offset": 257,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/maren\/Documents\/SanarSDK\/Framework\/SanarKit\/SanarKit\/BookingListView.swift",
+      "filePath": "\/Users\/maren\/Documents\/sdk\/sanarKitNative\/Framework\/SanarKit\/SanarKit\/BookingListView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2120,
+      "offset": 2225,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/maren\/Documents\/SanarSDK\/Framework\/SanarKit\/SanarKit\/InstantConsultationView.swift",
+      "filePath": "\/Users\/maren\/Documents\/sdk\/sanarKitNative\/Framework\/SanarKit\/SanarKit\/InstantConsultationView.swift",
       "kind": "BooleanLiteral",
       "offset": 202,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/maren\/Documents\/SanarSDK\/Framework\/SanarKit\/SanarKit\/InstantConsultationView.swift",
+      "filePath": "\/Users\/maren\/Documents\/sdk\/sanarKitNative\/Framework\/SanarKit\/SanarKit\/InstantConsultationView.swift",
       "kind": "Dictionary",
       "offset": 265,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/maren\/Documents\/SanarSDK\/Framework\/SanarKit\/SanarKit\/InstantConsultationView.swift",
+      "filePath": "\/Users\/maren\/Documents\/sdk\/sanarKitNative\/Framework\/SanarKit\/SanarKit\/InstantConsultationView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2142,
+      "offset": 2247,
       "length": 4,
       "value": "true"
     }

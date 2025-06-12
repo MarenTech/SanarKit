@@ -2,7 +2,6 @@
 // swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target arm64-apple-ios17.5-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name SanarKit
 import Foundation
-import SafariServices
 @_exported import SanarKit
 import Swift
 import SwiftUI
@@ -55,17 +54,21 @@ extension SanarKit.SKBooking.Coordinator : WebKit.WKUIDelegate {
 extension SanarKit.SKServices.Coordinator : WebKit.WKUIDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
 }
-@_Concurrency.MainActor @preconcurrency public struct SKConsultation : SwiftUI.UIViewControllerRepresentable {
-  @_Concurrency.MainActor @preconcurrency public init(url: Foundation.URL)
-  @_Concurrency.MainActor @preconcurrency public func makeUIViewController(context: SanarKit.SKConsultation.Context) -> SafariServices.SFSafariViewController
-  @_Concurrency.MainActor @preconcurrency public func updateUIViewController(_ uiViewController: SafariServices.SFSafariViewController, context: SanarKit.SKConsultation.Context)
+@_Concurrency.MainActor @preconcurrency public struct SKConsultation : SwiftUI.UIViewRepresentable {
+  @_Concurrency.MainActor @preconcurrency public init(url: Foundation.URL, onNavigationAction: ((Foundation.URL) -> Swift.Void)? = nil, onDataReceived: ((Swift.String) -> Swift.Void)? = nil, isNavigationActive: SwiftUICore.Binding<Swift.Bool>)
+  @_Concurrency.MainActor @preconcurrency public func makeUIView(context: SanarKit.SKConsultation.Context) -> WebKit.WKWebView
+  @_Concurrency.MainActor @preconcurrency public func updateUIView(_ uiView: WebKit.WKWebView, context: SanarKit.SKConsultation.Context)
   @_Concurrency.MainActor @preconcurrency public func makeCoordinator() -> SanarKit.SKConsultation.Coordinator
-  @objc @_hasMissingDesignatedInitializers public class Coordinator : ObjectiveC.NSObject, SafariServices.SFSafariViewControllerDelegate {
-    @objc public func safariViewControllerDidFinish(_ controller: SafariServices.SFSafariViewController)
+  @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class Coordinator : ObjectiveC.NSObject, WebKit.WKNavigationDelegate, WebKit.WKScriptMessageHandler {
+    @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
+    @_Concurrency.MainActor @preconcurrency @objc public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
     @objc deinit
   }
   public typealias Body = Swift.Never
-  public typealias UIViewControllerType = SafariServices.SFSafariViewController
+  public typealias UIViewType = WebKit.WKWebView
+}
+extension SanarKit.SKConsultation.Coordinator : WebKit.WKUIDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
 }
 @_Concurrency.MainActor @preconcurrency public struct ServiceView : SwiftUICore.View {
   @SwiftUICore.Binding @_projectedValueProperty($isNavigationActive) @_Concurrency.MainActor @preconcurrency public var isNavigationActive: Swift.Bool {
@@ -86,7 +89,17 @@ extension SanarKit.SKServices.Coordinator : WebKit.WKUIDelegate {
 }
 
 @_Concurrency.MainActor @preconcurrency public struct ConsultationView : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(consultationData: [Swift.String : Any])
+  @SwiftUICore.Binding @_projectedValueProperty($isNavigationActive) @_Concurrency.MainActor @preconcurrency public var isNavigationActive: Swift.Bool {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    nonmutating set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    nonmutating _modify
+  }
+  @_Concurrency.MainActor @preconcurrency public var $isNavigationActive: SwiftUICore.Binding<Swift.Bool> {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public init(isNavigationActive: SwiftUICore.Binding<Swift.Bool>, consultationData: [Swift.String : Any])
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
@@ -142,6 +155,7 @@ extension SanarKit.SKBooking.Coordinator : Swift.Sendable {}
 extension SanarKit.SKServices : Swift.Sendable {}
 extension SanarKit.SKServices.Coordinator : Swift.Sendable {}
 extension SanarKit.SKConsultation : Swift.Sendable {}
+extension SanarKit.SKConsultation.Coordinator : Swift.Sendable {}
 extension SanarKit.ServiceView : Swift.Sendable {}
 extension SanarKit.ConsultationView : Swift.Sendable {}
 extension SanarKit.BookingListView : Swift.Sendable {}
