@@ -14,7 +14,7 @@
 		</data>
 		<key>Modules/SanarKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		y65K5eHC4Iid6lMjBbA1H2uN7mI=
+		pFilcLt1dRBhEAgbAQRRBOM/nPA=
 		</data>
 		<key>Modules/SanarKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/SanarKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		q2JB007K/2G4BE/qsk5fCkDUnDY=
+		dc7OkK0BweK+s7YG2qOLMmh8Nvg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -50,7 +50,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BFkL1Qnprvd0rPqcro5HelaEc8UD8akZb73EfjeF7Gc=
+			2GRlGzDfM4Y7yu6poi799TnwbtwE8Exv37ng7jc9SMs=
 			</data>
 		</dict>
 		<key>Modules/SanarKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -78,7 +78,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hkBriuphnJCv90x93dqxSZhc7lSdjvTO1gvOCAW+TGM=
+			Q6JQyShV70+w32eqhr8pu3F8tNFC5Lj6D+5ZelG1inc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
