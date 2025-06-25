@@ -3227,9 +3227,37 @@
             "mangledName": "$s8SanarKit9SKManagerVACycfc",
             "moduleName": "SanarKit",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "setEnvironment",
+            "printedName": "setEnvironment(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8SanarKit9SKManagerV14setEnvironmentyySSFZ",
+            "mangledName": "$s8SanarKit9SKManagerV14setEnvironmentyySSFZ",
+            "moduleName": "SanarKit",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -4036,7 +4064,14 @@
     {
       "filePath": "\/Users\/maren\/Documents\/sdk\/sanarKitNative\/Framework\/SanarKit\/SanarKit\/SKManager.swift",
       "kind": "StringLiteral",
-      "offset": 311,
+      "offset": 174,
+      "length": 12,
+      "value": "\"production\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/sdk\/sanarKitNative\/Framework\/SanarKit\/SanarKit\/SKManager.swift",
+      "kind": "StringLiteral",
+      "offset": 902,
       "length": 4,
       "value": "\"en\""
     },

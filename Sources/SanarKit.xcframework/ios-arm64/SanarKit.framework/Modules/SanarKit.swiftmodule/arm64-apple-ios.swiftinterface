@@ -109,6 +109,7 @@ extension SanarKit.SKConsultation.Coordinator : WebKit.WKUIDelegate {
 public struct SKManager {
   public static var clientAuth: [Swift.String : Any]?
   public init()
+  public static func setEnvironment(_ env: Swift.String)
   public static func connect(cid: Swift.String, bundleId: Swift.String, clientInfo: [Swift.String : Any], lang: Swift.String = "en") async throws -> Swift.String
   public static func disconnect()
 }

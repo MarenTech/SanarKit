@@ -4,12 +4,14 @@ SanarKit - is a Swift framework designed to seamlessly integrate Sanar services 
 
 ### SanarKit will support the following implementation
 
+- ### [setEnvironment](https://github.com/MarenTech/SanarKit?tab=readme-ov-file#setenvironment-1)
 - ### [connect](https://github.com/MarenTech/SanarKit?tab=readme-ov-file#connect-1)
 - ### [disconnect](https://github.com/MarenTech/SanarKit?tab=readme-ov-file#disconnect-1)
 - ### [ServiceView](https://github.com/MarenTech/SanarKit?tab=readme-ov-file#serviceview-1)
 - ### [InstantConsultationView](https://github.com/MarenTech/SanarKit?tab=readme-ov-file#instantconsultationview-1)
 - ### [BookingListView](https://github.com/MarenTech/SanarKit?tab=readme-ov-file#bookinglistview-1)
 - ### [ConsultationView](https://github.com/MarenTech/SanarKit?tab=readme-ov-file#consultationview-1)
+
 
 ## Installation Steps
 
@@ -29,6 +31,19 @@ Import SanarKit
 ```
 
 ## SanarKit Modules
+
+# setEnvironment
+SanarKit SDK supports multiple environments for different stages of development. By default the SDK is set to the production environment.
+
+## Available Environments
+- `production`: Default environment for live/production applications
+- `development`: Environment for development and debugging
+
+### Example Usage
+
+```swift
+    SKManager.setEnvironment("development")
+```
 
 # connect
 The SanarKit SDK provides a seamless way to integrate authentication and connection services into your iOS applications. One of the key methods in the SDK is SKManager.connect, which allows your application to authenticate with SanarServices. To effectively integrate authentication and connection services into your iOS application using the SanarKit SDK, you should ensure the following:
