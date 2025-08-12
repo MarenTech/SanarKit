@@ -10,27 +10,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		YsV9m2WJ90So4eKcvKYCcRfatiI=
+		ObYZ4lGKPtXMxrevbG0ht4zM964=
 		</data>
 		<key>Modules/SanarKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		XCOjytm0H49w8iteDnpxzYE33k0=
+		4M4agq5X3fywg295U4MUz7J71Rg=
 		</data>
 		<key>Modules/SanarKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		Or+FbEvE5fP0Mkv6O5yDeiB9AL0=
+		cQlnxm3XYuoxpG/wvar+1i+efv4=
 		</data>
 		<key>Modules/SanarKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		5JFNzAKjhggSW8MUw4zD4dHsn20=
+		JIMt78zjZdWXUUqSIxQanjYgKVI=
 		</data>
 		<key>Modules/SanarKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		Or+FbEvE5fP0Mkv6O5yDeiB9AL0=
+		cQlnxm3XYuoxpG/wvar+1i+efv4=
 		</data>
 		<key>Modules/SanarKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		mPJ3SuAJ4RuSRqaXDzFsqKX/nj8=
+		zdf/nQsguJ60dtt9wyshR9VoCXc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -50,35 +50,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			n0OP+sB+HNBgxBeDto3BIZoH6dV6bzrEoXmgMaIpv9o=
+			Skg3C8NejSYmIYY3TpeBlCbziUpOUN7O0F9B10Eqw6c=
 			</data>
 		</dict>
 		<key>Modules/SanarKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+aQJ4DLb+ATpgy/qwtEhaPkzSSEHcjbCdCG3zLKzkBw=
+			SwonQU+h1iMfv8kRtaM5w0YwqyxBzSRQFy7tw0ovxNw=
 			</data>
 		</dict>
 		<key>Modules/SanarKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IF4rgmsmblsMYbxdjs//ohM3Z9rv/6MXJWef/iykY6A=
+			tN0BkYk6fjA7kJlqFdh1SRvyMQ+naMxR1T0VKxDW+Pw=
 			</data>
 		</dict>
 		<key>Modules/SanarKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+aQJ4DLb+ATpgy/qwtEhaPkzSSEHcjbCdCG3zLKzkBw=
+			SwonQU+h1iMfv8kRtaM5w0YwqyxBzSRQFy7tw0ovxNw=
 			</data>
 		</dict>
 		<key>Modules/SanarKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/LOr4iwxKLuqYxjOemCio8DFAU4cqL4nWoj7FRvdLW4=
+			sJkLTVQaV+B/2yDqrd5fpZ+sm5rIPCFCZFMgGZ3nbN0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

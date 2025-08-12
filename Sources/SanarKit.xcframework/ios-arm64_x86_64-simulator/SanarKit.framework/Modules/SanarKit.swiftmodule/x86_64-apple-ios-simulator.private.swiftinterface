@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target x86_64-apple-ios17.5-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name SanarKit
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target x86_64-apple-ios17.5-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SanarKit
+// swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
 import Foundation
 @_exported import SanarKit
 import Swift
@@ -106,6 +107,40 @@ extension SanarKit.SKConsultation.Coordinator : WebKit.WKUIDelegate {
   public typealias Body = @_opaqueReturnTypeOf("$s8SanarKit16ConsultationViewV4bodyQrvp", 0) __
 }
 
+@_Concurrency.MainActor @preconcurrency public struct DashboardView : SwiftUICore.View {
+  @SwiftUICore.Binding @_projectedValueProperty($isNavigationActive) @_Concurrency.MainActor @preconcurrency public var isNavigationActive: Swift.Bool {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    nonmutating set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    nonmutating _modify
+  }
+  @_Concurrency.MainActor @preconcurrency public var $isNavigationActive: SwiftUICore.Binding<Swift.Bool> {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public init(isNavigationActive: SwiftUICore.Binding<Swift.Bool>)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s8SanarKit13DashboardViewV4bodyQrvp", 0) __
+}
+
+@_Concurrency.MainActor @preconcurrency public struct SKDashboard : SwiftUI.UIViewRepresentable {
+  @_Concurrency.MainActor @preconcurrency public init(url: Foundation.URL, onNavigationAction: ((Foundation.URL) -> Swift.Void)? = nil, onDataReceived: ((Swift.String) -> Swift.Void)? = nil, isNavigationActive: SwiftUICore.Binding<Swift.Bool>, isChatActive: SwiftUICore.Binding<Swift.Bool>, chatData: SwiftUICore.Binding<[Swift.String : Any]>)
+  @_Concurrency.MainActor @preconcurrency public func makeUIView(context: SanarKit.SKDashboard.Context) -> WebKit.WKWebView
+  @_Concurrency.MainActor @preconcurrency public func updateUIView(_ uiView: WebKit.WKWebView, context: SanarKit.SKDashboard.Context)
+  @_Concurrency.MainActor @preconcurrency public func makeCoordinator() -> SanarKit.SKDashboard.Coordinator
+  @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class Coordinator : ObjectiveC.NSObject, WebKit.WKNavigationDelegate, WebKit.WKScriptMessageHandler, UIKit.UIScrollViewDelegate {
+    @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
+    @_Concurrency.MainActor @preconcurrency @objc public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
+    @_Concurrency.MainActor @preconcurrency @objc public func scrollViewWillBeginZooming(_ scrollView: UIKit.UIScrollView, with view: UIKit.UIView?)
+    @_Concurrency.MainActor @preconcurrency @objc public func scrollViewDidZoom(_ scrollView: UIKit.UIScrollView)
+    @_Concurrency.MainActor @preconcurrency @objc public func viewForZooming(in scrollView: UIKit.UIScrollView) -> UIKit.UIView?
+    @objc deinit
+  }
+  public typealias Body = Swift.Never
+  public typealias UIViewType = WebKit.WKWebView
+}
 public struct SKManager {
   public static var clientAuth: [Swift.String : Any]?
   public init()
@@ -159,5 +194,8 @@ extension SanarKit.SKConsultation : Swift.Sendable {}
 extension SanarKit.SKConsultation.Coordinator : Swift.Sendable {}
 extension SanarKit.ServiceView : Swift.Sendable {}
 extension SanarKit.ConsultationView : Swift.Sendable {}
+extension SanarKit.DashboardView : Swift.Sendable {}
+extension SanarKit.SKDashboard : Swift.Sendable {}
+extension SanarKit.SKDashboard.Coordinator : Swift.Sendable {}
 extension SanarKit.BookingListView : Swift.Sendable {}
 extension SanarKit.InstantConsultationView : Swift.Sendable {}
