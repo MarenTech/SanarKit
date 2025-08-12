@@ -7,6 +7,7 @@ SanarKit - is a Swift framework designed to seamlessly integrate Sanar services 
 - ### [setEnvironment](https://github.com/MarenTech/SanarKit?tab=readme-ov-file#setenvironment-1)
 - ### [connect](https://github.com/MarenTech/SanarKit?tab=readme-ov-file#connect-1)
 - ### [disconnect](https://github.com/MarenTech/SanarKit?tab=readme-ov-file#disconnect-1)
+- ### [DashboardView](https://github.com/MarenTech/SanarKit?tab=readme-ov-file#dashboardview--new-unified-experience-)
 - ### [ServiceView](https://github.com/MarenTech/SanarKit?tab=readme-ov-file#serviceview-1)
 - ### [InstantConsultationView](https://github.com/MarenTech/SanarKit?tab=readme-ov-file#instantconsultationview-1)
 - ### [BookingListView](https://github.com/MarenTech/SanarKit?tab=readme-ov-file#bookinglistview-1)
@@ -117,6 +118,47 @@ SKManager.disconnect()
 ```
 
 Best Practices: It's good practice to call `disconnect` when your app is about to be suspended, or when the user logs out or navigates away from sections of the app that require a connection to the SanarKit service.
+
+# DashboardView ( New Unified Experience )
+The DashboardView component consolidates all Sanar services into a single, user-friendly interface.
+
+#### Included Services
+	•	Teleconsultation
+	•	Home Visit
+	•	Appointment Management (upcoming, Completed, Cancelled)
+	•	Integrated Chat & Call with Doctors
+
+#### Advantages
+	•	Single Entry Point for all services.
+	•	Pre-built UI for consistent Sanar experience.
+	•	Less Integration Effort – Replaces multiple separate modules.
+
+#### Example Usage
+```swift
+import SwiftUI
+import SanarKit
+
+struct ContentView: View {
+    @State private var isSKDashboard = false
+
+    var body: some View {
+        NavigationStack {
+            Button {
+                isBooking = true
+            } label: {
+                Text("Sanar Services")
+                    .foregroundColor(.blue)
+            }
+            .navigationDestination(isPresented: $isSKDashboard) {
+                SanarKit.DashboardView(isNavigationActive: $isSKDashboard)
+            }
+        }
+    }
+}
+```
+
+- Note: The older modules (ServiceView, InstantConsultationView, BookingListView) are still available for backward compatibility, but we recommend using DashboardView for new integrations.
+
 
 # ServiceView
 The SanarKit SDK includes a `ServiceView` that allows your application to navigate directly to the Sanar Booking flow. This flow handles the complete booking process with in the SDK, making it easy to integrate without requiring extensive additional development including UI interface.
